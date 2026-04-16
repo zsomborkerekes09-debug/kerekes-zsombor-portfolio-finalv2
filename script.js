@@ -73,24 +73,49 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', e => {
         e.preventDefault();
+        
         const btn = contactForm.querySelector('.form-submit');
         const originalText = btn.textContent;
+        const formData = new FormData(contactForm);
+
         btn.textContent = 'Küldés folyamatban...';
         btn.disabled = true;
         btn.style.opacity = '0.7';
-        setTimeout(() => {
-            btn.textContent = '✓ Elküldve!';
-            btn.style.opacity = '1';
-            btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-            document.getElementById('formSuccess').classList.add('show');
-            contactForm.reset();
+
+        // Real submission to FormSubmit
+        fetch(contactForm.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                btn.textContent = '✓ Elküldve!';
+                btn.style.opacity = '1';
+                btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+                document.getElementById('formSuccess').classList.add('show');
+                contactForm.reset();
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                    document.getElementById('formSuccess').classList.remove('show');
+                }, 5000);
+            } else {
+                throw new Error('Hiba történt');
+            }
+        })
+        .catch(error => {
+            btn.textContent = 'Hiba történt!';
+            btn.style.background = '#ef4444';
             setTimeout(() => {
                 btn.textContent = originalText;
                 btn.style.background = '';
                 btn.disabled = false;
-                document.getElementById('formSuccess').classList.remove('show');
-            }, 5000);
-        }, 1500);
+            }, 3000);
+        });
     });
 }
 
