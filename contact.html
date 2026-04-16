@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat – Kerekes Zsombor Webfejlesztő</title>
+    <meta name="description" content="Vegye fel a kapcsolatot Kerekes Zsomborral – ingyenes konzultáció, weboldal és foglalási rendszer fejlesztés.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        <div class="logo-mark">KZ</div>
+        <span class="logo-name">Kerekes Zsombor</span>
+    </a>
+    <div class="nav-links">
+        <a href="index.html" class="nav-link">Kezdőlap</a>
+        <a href="services.html" class="nav-link">Szolgáltatások</a>
+        <a href="portfolio.html" class="nav-link">Portfólió</a>
+        <a href="about.html" class="nav-link">Rólam</a>
+        <a href="contact.html" class="nav-link">Kapcsolat</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Ingyenes konzultáció →</a>
+    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Kezdőlap</a>
+    <a href="services.html" class="nav-link">Szolgáltatások</a>
+    <a href="portfolio.html" class="nav-link">Portfólió</a>
+    <a href="about.html" class="nav-link">Rólam</a>
+    <a href="contact.html" class="nav-link">Kapcsolat</a>
+</div>
+
+<div class="page-wrap">
+
+    <!-- HERO -->
+    <div class="contact-hero reveal">
+        <span class="section-tag">KAPCSOLAT</span>
+        <h1 class="section-title" style="max-width:520px; margin: 0 auto 16px;">Kezdjük el együtt!</h1>
+        <p class="section-desc" style="margin: 0 auto; max-width: 500px;">Írjon, hívjon, vagy töltse ki az űrlapot – 24 órán belül válaszolok minden megkeresésre.</p>
+    </div>
+
+    <!-- CONTACT GRID -->
+    <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info reveal">
+            <div class="ci-card">
+                <div class="ci-icon-wrap">📧</div>
+                <div>
+                    <div class="ci-label">Email</div>
+                    <div class="ci-val"><a href="mailto:zsomborkerekes09@gmail.com">zsomborkerekes09@gmail.com</a></div>
+                </div>
+            </div>
+            <div class="ci-card">
+                <div class="ci-icon-wrap">📞</div>
+                <div>
+                    <div class="ci-label">Telefon</div>
+                    <div class="ci-val"><a href="tel:+36703280900">06 70 328 0900</a></div>
+                </div>
+            </div>
+            <div class="ci-card">
+                <div class="ci-icon-wrap">📍</div>
+                <div>
+                    <div class="ci-label">Helyszín</div>
+                    <div class="ci-val">Magyarország</div>
+                </div>
+            </div>
+            <div class="ci-card">
+                <div class="ci-icon-wrap">⏱️</div>
+                <div>
+                    <div class="ci-label">Válaszidő</div>
+                    <div class="ci-val">24 órán belül</div>
+                </div>
+            </div>
+            <div class="ci-card">
+                <div class="ci-icon-wrap">💬</div>
+                <div>
+                    <div class="ci-label">Konzultáció</div>
+                    <div class="ci-val">Ingyenes, kötelezettség nélkül</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-wrap reveal">
+            <h3>Küldjön üzenetet</h3>
+            <form id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fname">Neve *</label>
+                        <input type="text" id="fname" name="fname" placeholder="Pl. Kovács Péter" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefonszám</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06 30 ...">
+                    </div>
+                    <div class="form-group full">
+                        <label for="email">Email cím *</label>
+                        <input type="email" id="email" name="email" placeholder="cime@email.hu" required>
+                    </div>
+                    <div class="form-group full">
+                        <label for="business">Vállalkozás típusa</label>
+                        <select id="business" name="business">
+                            <option value="">Válasszon egyet...</option>
+                            <option>Fogászat / Egészségügyi klinika</option>
+                            <option>Gumiszerviz / Autószerviz</option>
+                            <option>Kutyakozmetika / Kisállatszalon</option>
+                            <option>Szépségszalon / Fodrász</option>
+                            <option>Más vállalkozás</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label for="budget">Hozzávetőleges keret</label>
+                        <select id="budget" name="budget">
+                            <option value="">Nem tudom / Nem áruló el</option>
+                            <option>50 000 – 100 000 Ft</option>
+                            <option>100 000 – 200 000 Ft</option>
+                            <option>200 000 Ft felett</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label for="message">Üzenet / elképzelés *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Meséljen a vállalkozásáról, az elképzeléséről, a kívánt funkciókról..." required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="form-submit" id="contactSubmit">Üzenet küldése →</button>
+                <div class="form-success" id="formSuccess">
+                    ✓ Köszönöm az üzenetet! Hamarosan – 24 órán belül – felveszem a kapcsolatot.
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM CTA STRIP -->
+    <div class="contact-map reveal" style="margin: 0 auto 80px; max-width: 1000px; padding: 56px 60px;">
+        <div>
+            <h2>Inkább telefonál?</h2>
+            <p>Hívjon fel bármikor – szívesen megbeszéljük az elképzeléseit személyesen is.</p>
+        </div>
+        <a href="tel:+36703280900" class="btn btn-white btn-lg" id="contact-phone-btn">📞 06 70 328 0900</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo-mark">KZ</div>
+            <p style="margin-top: 16px;">Prémium weboldalak és online foglalási rendszerek fejlesztése Magyarország szerte.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Oldalak</h4>
+            <a href="index.html">Kezdőlap</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="portfolio.html">Portfólió</a>
+            <a href="about.html">Rólam</a>
+            <a href="contact.html">Kapcsolat</a>
+        </div>
+        <div class="footer-col">
+            <h4>Iparágak</h4>
+            <a href="portfolio.html">Fogászat</a>
+            <a href="portfolio.html">Gumiszerviz</a>
+            <a href="portfolio.html">Kutyakozmetika</a>
+            <a href="portfolio.html">Szépségszalon</a>
+        </div>
+        <div class="footer-col">
+            <h4>Elérhetőség</h4>
+            <a href="mailto:zsomborkerekes09@gmail.com">zsomborkerekes09@gmail.com</a>
+            <a href="tel:+36703280900">06 70 328 0900</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Kerekes Zsombor – Minden jog fenntartva.</span>
+        <span>Prémium foglalási rendszerek Magyarországon.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

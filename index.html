@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerekes Zsombor – Webfejlesztő | Online Foglalási Rendszerek</title>
+    <meta name="description" content="Kerekes Zsombor webfejlesztő – Prémium online foglalási rendszerek fogászatoknak, gumiszervizeknek, kutyakozmetikusoknak és más vállalkozásoknak.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        <div class="logo-mark">KZ</div>
+        <span class="logo-name">Kerekes Zsombor</span>
+    </a>
+    <div class="nav-links">
+        <a href="index.html" class="nav-link">Kezdőlap</a>
+        <a href="services.html" class="nav-link">Szolgáltatások</a>
+        <a href="portfolio.html" class="nav-link">Portfólió</a>
+        <a href="about.html" class="nav-link">Rólam</a>
+        <a href="contact.html" class="nav-link">Kapcsolat</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Ingyenes konzultáció →</a>
+    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Kezdőlap</a>
+    <a href="services.html" class="nav-link">Szolgáltatások</a>
+    <a href="portfolio.html" class="nav-link">Portfólió</a>
+    <a href="about.html" class="nav-link">Rólam</a>
+    <a href="contact.html" class="nav-link">Kapcsolat</a>
+    <a href="contact.html" class="nav-cta">Ingyenes konzultáció →</a>
+</div>
+
+<div class="page-wrap">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left reveal">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                Elérhető új projektekre
+            </div>
+            <h1 class="hero-title">
+                Weboldal &amp;<br>
+                <span class="grad-text">Foglalási Rendszer</span><br>
+                minden vállalkozásnak.
+            </h1>
+            <p class="hero-sub">
+                Prémium weboldalakat fejlesztek beépített online foglalással.
+                Fogászatoktól szépségszalonokig – testre szabva az Ön iparágára.
+            </p>
+            <div class="hero-actions">
+                <a href="contact.html" class="btn btn-primary btn-lg" id="hero-cta">Ingyenes konzultáció →</a>
+                <a href="portfolio.html" class="btn btn-outline btn-lg" id="hero-portfolio">Munkáim megtekintése</a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <span class="h-stat-num" data-count="10" data-suffix="+">10+</span>
+                    <div class="h-stat-label">Befejezett projekt</div>
+                </div>
+                <div>
+                    <span class="h-stat-num" data-count="100" data-suffix="%">100%</span>
+                    <div class="h-stat-label">Elégedett ügyfél</div>
+                </div>
+                <div>
+                    <span class="h-stat-num" data-count="24" data-suffix="h">24h</span>
+                    <div class="h-stat-label">Max. válaszidő</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right reveal">
+            <div class="booking-card">
+                <div class="bc-header">
+                    <div class="bc-clinic">🏥 Online Foglalás</div>
+                    <div class="bc-sub">Válasszon szabad időpontot</div>
+                </div>
+                <div class="bc-body">
+                    <div class="bc-calendar">
+                        <div class="bc-cal-header">
+                            <div class="bc-cal-nav">◀</div>
+                            <span>Április 2026</span>
+                            <div class="bc-cal-nav">▶</div>
+                        </div>
+                        <div class="bc-grid">
+                            <div class="bc-day hd">H</div>
+                            <div class="bc-day hd">K</div>
+                            <div class="bc-day hd">Sz</div>
+                            <div class="bc-day hd">Cs</div>
+                            <div class="bc-day hd">P</div>
+                            <div class="bc-day hd">Sz</div>
+                            <div class="bc-day hd">V</div>
+                            <div class="bc-day">1</div>
+                            <div class="bc-day avail">2</div>
+                            <div class="bc-day avail">3</div>
+                            <div class="bc-day avail">4</div>
+                            <div class="bc-day avail">5</div>
+                            <div class="bc-day">6</div>
+                            <div class="bc-day">7</div>
+                            <div class="bc-day avail">8</div>
+                            <div class="bc-day booked">9</div>
+                            <div class="bc-day avail">10</div>
+                            <div class="bc-day avail">11</div>
+                            <div class="bc-day booked">12</div>
+                            <div class="bc-day">13</div>
+                            <div class="bc-day">14</div>
+                            <div class="bc-day today">15</div>
+                            <div class="bc-day sel">16</div>
+                            <div class="bc-day avail">17</div>
+                            <div class="bc-day avail">18</div>
+                            <div class="bc-day avail">19</div>
+                        </div>
+                    </div>
+                    <div class="bc-slots">
+                        <div class="bc-slot taken">
+                            <span>09:00 – 09:45</span>
+                            <span class="bc-slot-badge">Foglalt</span>
+                        </div>
+                        <div class="bc-slot picked">
+                            <span>10:00 – 10:45</span>
+                            <span class="bc-slot-badge">Kiválasztva ✓</span>
+                        </div>
+                        <div class="bc-slot free">
+                            <span>11:00 – 11:45</span>
+                            <span class="bc-slot-badge">Szabad</span>
+                        </div>
+                    </div>
+                    <button class="bc-btn">Időpont lefoglalása →</button>
+                </div>
+            </div>
+            <div class="hero-chip chip-1">☁ Firebase szinkron</div>
+            <div class="hero-chip chip-2">📱 Mobilbarát</div>
+            <div class="hero-chip chip-3">⚡ Admin felület</div>
+        </div>
+    </section>
+
+    <!-- QUICK STRIP -->
+    <div class="quick-strip reveal">
+        <div class="qs-item">
+            <div class="qs-icon">📅</div>
+            <h4>Online Foglalás</h4>
+            <p>Valós idejű naptár, automatikus értesítések</p>
+        </div>
+        <div class="qs-item">
+            <div class="qs-icon">⚙️</div>
+            <h4>Admin Irányítópult</h4>
+            <p>Teljes kontroll a foglalások felett</p>
+        </div>
+        <div class="qs-item">
+            <div class="qs-icon">🔥</div>
+            <h4>Firebase Backend</h4>
+            <p>Felhős, biztonságos adatkezelés</p>
+        </div>
+        <div class="qs-item">
+            <div class="qs-icon">📱</div>
+            <h4>Mobilbarát</h4>
+            <p>100% reszponzív minden eszközön</p>
+        </div>
+    </div>
+
+    <!-- TEASER: SERVICES -->
+    <div class="teaser reveal">
+        <div class="teaser-text">
+            <span class="section-tag">SZOLGÁLTATÁSOK</span>
+            <h2 class="section-title">Minden, ami egy profi online jelenléthez kell</h2>
+            <p class="section-desc">Az online foglalási rendszertől a teljes weboldalig – minden egyben, testre szabva az Ön területéhez.</p>
+            <a href="services.html" class="btn btn-primary" style="margin-top: 8px;">Összes szolgáltatás →</a>
+        </div>
+        <div class="teaser-card">
+            <ul class="tc-list">
+                <li class="tc-item">
+                    <div class="tc-num">1</div>
+                    <div class="tc-body">
+                        <strong>Online foglalási rendszer</strong>
+                        <span>Valós idejű naptár, automatikus visszaigazolás</span>
+                    </div>
+                </li>
+                <li class="tc-item">
+                    <div class="tc-num">2</div>
+                    <div class="tc-body">
+                        <strong>Prémium weboldal design</strong>
+                        <span>Modern, gyors, SEO-optimalizált oldal</span>
+                    </div>
+                </li>
+                <li class="tc-item">
+                    <div class="tc-num">3</div>
+                    <div class="tc-body">
+                        <strong>Admin irányítópult</strong>
+                        <span>Foglalások, ügyfelek, naptár egy helyen</span>
+                    </div>
+                </li>
+                <li class="tc-item">
+                    <div class="tc-num">4</div>
+                    <div class="tc-body">
+                        <strong>Firebase felhős háttér</strong>
+                        <span>Biztonságos, skálázható adatbázis</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MINI PORTFOLIO PREVIEW -->
+    <div class="home-portfolio reveal">
+        <div class="section-header">
+            <span class="section-tag">PORTFÓLIÓ</span>
+            <h2 class="section-title">Referencia projektek</h2>
+            <p class="section-desc">Valódi munkák különböző iparágakban – nézze meg, mit tudok.</p>
+        </div>
+        <div class="hp-grid">
+            <div class="hp-card">
+                <div class="hp-img"><img src="img_dental.png" alt="Fogászati foglalási rendszer"></div>
+                <div class="hp-info">
+                    <div class="hp-sector">Fogászat</div>
+                    <h4>Prémium Fogászati Weboldal</h4>
+                    <p>Online foglalás, admin dashboard, Firebase</p>
+                </div>
+            </div>
+            <div class="hp-card">
+                <div class="hp-img"><img src="img_tire.png" alt="Gumiszerviz foglalási rendszer"></div>
+                <div class="hp-info">
+                    <div class="hp-sector">Gumiszerviz</div>
+                    <h4>Autószerviz Booking</h4>
+                    <p>Heti kapacitáskezelő, állás-foglalás</p>
+                </div>
+            </div>
+            <div class="hp-card">
+                <div class="hp-img"><img src="img_dog.png" alt="Kutyakozmetika webolal"></div>
+                <div class="hp-info">
+                    <div class="hp-sector">Kutyakozmetika</div>
+                    <h4>Kisállatszalon Platform</h4>
+                    <p>Szolgáltatáslista, időpontfoglaló</p>
+                </div>
+            </div>
+            <div class="hp-card">
+                <div class="hp-img"><img src="img_salon.png" alt="Szépségszalon weboldal"></div>
+                <div class="hp-info">
+                    <div class="hp-sector">Szépségszalon</div>
+                    <h4>Szalonmenedzsment Rendszer</h4>
+                    <p>Fodrász-naptár, jóváhagyásos foglalás</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top: 40px;">
+            <a href="portfolio.html" class="btn btn-outline">Összes referencia megtekintése →</a>
+        </div>
+    </div>
+
+    <!-- HOME CTA -->
+    <div class="home-cta reveal">
+        <h2>Készen áll az online jelenlétre?</h2>
+        <p>Egyeztetünk, felmérem az igényeket – kötelezettség nélkül, ingyen.</p>
+        <a href="contact.html" class="btn btn-white btn-lg" id="home-bottom-cta">Ingyenes konzultáció kérése →</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo-mark">KZ</div>
+            <p style="margin-top: 16px;">Prémium weboldalak és online foglalási rendszerek fejlesztése Magyarország szerte.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Oldalak</h4>
+            <a href="index.html">Kezdőlap</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="portfolio.html">Portfólió</a>
+            <a href="about.html">Rólam</a>
+            <a href="contact.html">Kapcsolat</a>
+        </div>
+        <div class="footer-col">
+            <h4>Iparágak</h4>
+            <a href="portfolio.html">Fogászat</a>
+            <a href="portfolio.html">Gumiszerviz</a>
+            <a href="portfolio.html">Kutyakozmetika</a>
+            <a href="portfolio.html">Szépségszalon</a>
+        </div>
+        <div class="footer-col">
+            <h4>Elérhetőség</h4>
+            <a href="mailto:zsomborkerekes09@gmail.com">zsomborkerekes09@gmail.com</a>
+            <a href="tel:+36703280900">06 70 328 0900</a>
+            <a href="contact.html">Kapcsolatfelvétel →</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Kerekes Zsombor – Minden jog fenntartva.</span>
+        <span>Prémium foglalási rendszerek Magyarországon.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

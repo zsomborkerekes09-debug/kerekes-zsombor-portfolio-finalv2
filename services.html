@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szolgáltatások – Kerekes Zsombor Webfejlesztő</title>
+    <meta name="description" content="Online foglalási rendszerek, prémium weboldalak, admin irányítópultok fejlesztése – fogászatoktól szalonokig.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        <div class="logo-mark">KZ</div>
+        <span class="logo-name">Kerekes Zsombor</span>
+    </a>
+    <div class="nav-links">
+        <a href="index.html" class="nav-link">Kezdőlap</a>
+        <a href="services.html" class="nav-link">Szolgáltatások</a>
+        <a href="portfolio.html" class="nav-link">Portfólió</a>
+        <a href="about.html" class="nav-link">Rólam</a>
+        <a href="contact.html" class="nav-link">Kapcsolat</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Ingyenes konzultáció →</a>
+    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Kezdőlap</a>
+    <a href="services.html" class="nav-link">Szolgáltatások</a>
+    <a href="portfolio.html" class="nav-link">Portfólió</a>
+    <a href="about.html" class="nav-link">Rólam</a>
+    <a href="contact.html" class="nav-link">Kapcsolat</a>
+    <a href="contact.html" class="nav-cta">Ingyenes konzultáció →</a>
+</div>
+
+<div class="page-wrap">
+
+    <!-- HERO -->
+    <div class="services-hero reveal">
+        <span class="section-tag">SZOLGÁLTATÁSOK</span>
+        <h1 class="section-title" style="max-width:600px; margin: 0 auto 16px;">Mit kapsz velem együtt?</h1>
+        <p class="section-desc" style="margin: 0 auto; max-width: 520px;">Teljes körű webfejlesztés online foglalással – egyetlen helyen, testre szabva az Ön vállalkozásához.</p>
+    </div>
+
+    <!-- SERVICES GRID -->
+    <div class="services-grid">
+
+        <div class="svc-card reveal" id="svc-booking">
+            <div class="svc-hot">⭐ Legkeresettebb</div>
+            <div class="svc-icon-wrap">📅</div>
+            <h3>Online Foglalási Rendszer</h3>
+            <p>Ügyfelei éjjel-nappal foglalhatnak, Ön reggel megnyitja a dashboardot és látja az összes kért időpontot. Automatikus e-mail értesítés, jóváhagyásos folyamat.</p>
+            <ul class="svc-features">
+                <li>Valós idejű naptár megjelenítés</li>
+                <li>Automatikus e-mail visszaigazolás</li>
+                <li>Jóváhagyásos vagy azonnali foglalás</li>
+                <li>Mobilbarát foglalófelület</li>
+                <li>Szabad / foglalt idősávok kezelése</li>
+                <li>Többfunkciós szűrők (szolgáltatás, munkatárs)</li>
+            </ul>
+        </div>
+
+        <div class="svc-card reveal" id="svc-website">
+            <div class="svc-icon-wrap">🖥️</div>
+            <h3>Prémium Weboldal Design</h3>
+            <p>Egyedi, modern megjelenés, amely azonnal bizalmat ébreszt a látogatókban. Gyors betöltés, SEO-barát szerkezet, minden eszközön tökéletes megjelenés.</p>
+            <ul class="svc-features">
+                <li>Egyedi, testre szabott design</li>
+                <li>SEO-optimalizált struktúra</li>
+                <li>Villámgyors betöltési idő</li>
+                <li>Modern animációk, hover effektek</li>
+                <li>Google Fonts, iparághoz illő tipográfia</li>
+                <li>Reszponzív – mobil, tablet, desktop</li>
+            </ul>
+        </div>
+
+        <div class="svc-card reveal" id="svc-admin">
+            <div class="svc-icon-wrap">⚙️</div>
+            <h3>Admin Irányítópult</h3>
+            <p>Minden foglalás, ügyfél és időpont egy helyen. Átlátható naptár nézet, szűrők, foglalások törlése / módosítása, közvetlen telefonos rögzítés.</p>
+            <ul class="svc-features">
+                <li>Heti / havi naptár nézet</li>
+                <li>Foglalások manuális rögzítése</li>
+                <li>Ügyféladatbázis keresővel</li>
+                <li>Foglalás jóváhagyás / elutasítás</li>
+                <li>Zárolt időszakok beállítása</li>
+                <li>Statisztikák, havi összesítő</li>
+            </ul>
+        </div>
+
+        <div class="svc-card reveal" id="svc-firebase">
+            <div class="svc-icon-wrap">🔥</div>
+            <h3>Firebase Felhős Backend</h3>
+            <p>Google Firebase alapú adatbázis: valós idejű szinkron, biztonságos bejelentkezés, adatvédelmi szabályok. Skálázható és megbízható.</p>
+            <ul class="svc-features">
+                <li>Firestore valós idejű adatbázis</li>
+                <li>Firebase Authentication (bejelentkezés)</li>
+                <li>Biztonságos adatkezelési szabályok</li>
+                <li>Felhős tárhely (Storage)</li>
+                <li>Admin SDK szerver oldali műveletek</li>
+                <li>Automatikus skálázás</li>
+            </ul>
+        </div>
+
+        <div class="svc-card reveal" id="svc-mobile">
+            <div class="svc-icon-wrap">📱</div>
+            <h3>Mobilbarát Megjelenés</h3>
+            <p>Az ügyfelei 70%+ mobilról böngész. Minden oldal és foglalófelület tökéletesen működik okostelefonon, tableten és asztali gépen egyaránt.</p>
+            <ul class="svc-features">
+                <li>Responsive CSS grid &amp; flexbox</li>
+                <li>Touch-friendly gombok, naptár</li>
+                <li>Gyors mobilos betöltés</li>
+                <li>iOS és Android böngészőkkel tesztelve</li>
+                <li>Hamburger menü, mobil nézetek</li>
+            </ul>
+        </div>
+
+        <div class="svc-card reveal" id="svc-support">
+            <div class="svc-icon-wrap">🤝</div>
+            <h3>Folyamatos Támogatás</h3>
+            <p>Az átadás után sem tűnök el. Bármilyen kérdéssel, módosítással fordulhat hozzám – gyors reakcióidővel és szakmai válasszal.</p>
+            <ul class="svc-features">
+                <li>Betanítás a admin felület kezelésére</li>
+                <li>Karbantartás, hibajavítás</li>
+                <li>Tartalom frissítések</li>
+                <li>Bővítmények, új funkciók</li>
+                <li>24 órán belüli válasz</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- CTA BANNER -->
+    <div class="services-cta reveal" style="max-width: 1000px; margin: 0 auto 80px; padding: 60px;">
+        <h2>Nem tudja, melyik csomag az Önnek való?</h2>
+        <p>Írjon nekem – ingyenesen megbeszéljük az elképzeléseit és javaslatot teszek a legmegfelelőbb megoldásra.</p>
+        <a href="contact.html" class="btn btn-white btn-lg" id="services-cta-btn">Ingyenes konzultáció →</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo-mark">KZ</div>
+            <p style="margin-top: 16px;">Prémium weboldalak és online foglalási rendszerek fejlesztése Magyarország szerte.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Oldalak</h4>
+            <a href="index.html">Kezdőlap</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="portfolio.html">Portfólió</a>
+            <a href="about.html">Rólam</a>
+            <a href="contact.html">Kapcsolat</a>
+        </div>
+        <div class="footer-col">
+            <h4>Iparágak</h4>
+            <a href="portfolio.html">Fogászat</a>
+            <a href="portfolio.html">Gumiszerviz</a>
+            <a href="portfolio.html">Kutyakozmetika</a>
+            <a href="portfolio.html">Szépségszalon</a>
+        </div>
+        <div class="footer-col">
+            <h4>Elérhetőség</h4>
+            <a href="mailto:zsomborkerekes09@gmail.com">zsomborkerekes09@gmail.com</a>
+            <a href="tel:+36703280900">06 70 328 0900</a>
+            <a href="contact.html">Kapcsolatfelvétel →</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Kerekes Zsombor – Minden jog fenntartva.</span>
+        <span>Prémium foglalási rendszerek Magyarországon.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
