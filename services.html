@@ -9,136 +9,143 @@
 </head>
 <body>
 
-<nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo">
-        <div class="logo-mark">KZ</div>
-        <span class="logo-name">Kerekes Zsombor</span>
-    </a>
-    <div class="nav-links">
-        <a href="index.html" class="nav-link">Kezdőlap</a>
-        <a href="services.html" class="nav-link">Szolgáltatások</a>
-        <a href="portfolio.html" class="nav-link">Portfólió</a>
-        <a href="about.html" class="nav-link">Rólam</a>
-        <a href="contact.html" class="nav-link">Kapcsolat</a>
+<!-- NAV -->
+<nav class="nav" id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo-mark">KZ</a>
+        <div class="nav-links">
+            <a href="index.html">Kezdőlap</a>
+            <a href="services.html" class="active">Szolgáltatások</a>
+            <a href="portfolio.html">Portfólió</a>
+            <a href="about.html">Rólam</a>
+            <a href="contact.html">Kapcsolat</a>
+            <a href="contact.html" class="nav-cta">Ingyenes terv →</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
-    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
-        <span></span><span></span><span></span>
-    </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">Kezdőlap</a>
-    <a href="services.html" class="nav-link">Szolgáltatások</a>
-    <a href="portfolio.html" class="nav-link">Portfólió</a>
-    <a href="about.html" class="nav-link">Rólam</a>
-    <a href="contact.html" class="nav-link">Kapcsolat</a>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Kezdőlap</a>
+    <a href="services.html">Szolgáltatások</a>
+    <a href="portfolio.html">Portfólió</a>
+    <a href="about.html">Rólam</a>
+    <a href="contact.html">Kapcsolat</a>
+    <a href="contact.html" class="nav-cta">Ingyenes weboldal-terv →</a>
 </div>
 
-<div class="page-wrap">
-
-    <!-- HERO -->
-    <div class="services-hero reveal">
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-inner">
         <span class="section-tag">SZOLGÁLTATÁSOK</span>
-        <h1 class="section-title" style="max-width:700px; margin: 0 auto 16px;">Amit kap — és ami elmarad, ha nem vezet be foglalórendszert</h1>
-        <p class="section-desc" style="margin: 0 auto; max-width: 600px;">Egy átlag fodrász hetente 8-12 lefoglalható időpontot veszít el. Ez havi 30-50 ezer forint kiesett bevétel, amit megállíthatunk.</p>
+        <h1>Amit kap — és ami elmarad, ha <span class="gold-word">nem vezet be</span> foglalórendszert</h1>
+        <p>Egy átlag fodrász hetente 8-12 lefoglalható időpontot veszít el. Ez havi 30-50 ezer forint kiesett bevétel, amit megállíthatunk.</p>
+    </div>
+</div>
+
+<!-- SERVICES GRID -->
+<div class="services-grid">
+
+    <div class="service-card featured reveal" id="svc-booking">
+        <div class="sc-icon">📅</div>
+        <h3>Online Foglalási Rendszer</h3>
+        <p>Testreszabott, valós idejű naptárrendszer az Ön vállalkozásához. Az ügyfelek 0-24-ben foglalhatnak, Ön pedig egyetlen admin felületen lát mindent.</p>
+        <div class="service-price">Egyedi ajánlat</div>
+        <div class="service-price-note">Az ár funkcióktól és komplexitástól függ</div>
+        <ul class="sc-features">
+            <li class="sc-feature">Valós idejű naptár megjelenítés</li>
+            <li class="sc-feature">Automatikus e-mail visszaigazolás</li>
+            <li class="sc-feature">Firebase felhős szinkronizáció</li>
+            <li class="sc-feature">Admin dashboard a foglalásokhoz</li>
+            <li class="sc-feature">Mobilbarát reszponzív design</li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold">Kérem az ajánlatot →</a>
     </div>
 
-    <!-- SERVICES GRID -->
-    <div class="services-grid">
-
-        <div class="svc-card reveal" id="svc-booking">
-            <div class="svc-hot">⭐ Legkeresettebb</div>
-            <div class="svc-icon-wrap">📅</div>
-            <h3>Online Foglalási Rendszer</h3>
-            <p>Ügyfelei éjjel-nappal foglalhatnak, Ön reggel megnyitja a dashboardot és látja az összes kért időpontot. Automatikus e-mail értesítés, jóváhagyásos folyamat.</p>
-            <ul class="svc-features">
-                <li>Valós idejű naptár megjelenítés</li>
-                <li>Automatikus e-mail visszaigazolás</li>
-                <li>Jóváhagyásos vagy azonnali foglalás</li>
-                <li>Mobilbarát foglalófelület</li>
-                <li>Szabad / foglalt idősávok kezelése</li>
-                <li>Többfunkciós szűrők (szolgáltatás, munkatárs)</li>
-            </ul>
-        </div>
-
-        <div class="svc-card reveal" id="svc-website">
-            <div class="svc-icon-wrap">🖥️</div>
-            <h3>Prémium Weboldal Design</h3>
-            <p>Egyedi, modern megjelenés, amely azonnal bizalmat ébreszt a látogatókban. Gyors betöltés, SEO-barát szerkezet, minden eszközön tökéletes megjelenés.</p>
-            <ul class="svc-features">
-                <li>Egyedi, testre szabott design</li>
-                <li>SEO-optimalizált struktúra</li>
-                <li>Villámgyors betöltési idő</li>
-                <li>Modern animációk, hover effektek</li>
-                <li>Google Fonts, iparághoz illő tipográfia</li>
-                <li>Reszponzív – mobil, tablet, desktop</li>
-            </ul>
-        </div>
-
-        <div class="svc-card reveal" id="svc-admin">
-            <div class="svc-icon-wrap">⚙️</div>
-            <h3>Admin Irányítópult</h3>
-            <p>Minden foglalás, ügyfél és időpont egy helyen. Átlátható naptár nézet, szűrők, foglalások törlése / módosítása, közvetlen telefonos rögzítés.</p>
-            <ul class="svc-features">
-                <li>Heti / havi naptár nézet</li>
-                <li>Foglalások manuális rögzítése</li>
-                <li>Ügyféladatbázis keresővel</li>
-                <li>Foglalás jóváhagyás / elutasítás</li>
-                <li>Zárolt időszakok beállítása</li>
-                <li>Statisztikák, havi összesítő</li>
-            </ul>
-        </div>
-
-        <div class="svc-card reveal" id="svc-firebase">
-            <div class="svc-icon-wrap">🔥</div>
-            <h3>Firebase Felhős Backend</h3>
-            <p>Google Firebase alapú adatbázis: valós idejű szinkron, biztonságos bejelentkezés, adatvédelmi szabályok. Skálázható és megbízható.</p>
-            <ul class="svc-features">
-                <li>Firestore valós idejű adatbázis</li>
-                <li>Firebase Authentication (bejelentkezés)</li>
-                <li>Biztonságos adatkezelési szabályok</li>
-                <li>Felhős tárhely (Storage)</li>
-                <li>Admin SDK szerver oldali műveletek</li>
-                <li>Automatikus skálázás</li>
-            </ul>
-        </div>
-
-        <div class="svc-card reveal" id="svc-mobile">
-            <div class="svc-icon-wrap">📱</div>
-            <h3>Mobilbarát Megjelenés</h3>
-            <p>Az ügyfelei 70%+ mobilról böngész. Minden oldal és foglalófelület tökéletesen működik okostelefonon, tableten és asztali gépen egyaránt.</p>
-            <ul class="svc-features">
-                <li>Responsive CSS grid &amp; flexbox</li>
-                <li>Touch-friendly gombok, naptár</li>
-                <li>Gyors mobilos betöltés</li>
-                <li>iOS és Android böngészőkkel tesztelve</li>
-                <li>Hamburger menü, mobil nézetek</li>
-            </ul>
-        </div>
-
-        <div class="svc-card reveal" id="svc-support">
-            <div class="svc-icon-wrap">🤝</div>
-            <h3>Folyamatos Támogatás</h3>
-            <p>Az átadás után sem tűnök el. Bármilyen kérdéssel, módosítással fordulhat hozzám – gyors reakcióidővel és szakmai válasszal.</p>
-            <ul class="svc-features">
-                <li>Betanítás a admin felület kezelésére</li>
-                <li>Karbantartás, hibajavítás</li>
-                <li>Tartalom frissítések</li>
-                <li>Bővítmények, új funkciók</li>
-                <li>24 órán belüli válasz</li>
-            </ul>
-        </div>
-
+    <div class="service-card reveal" id="svc-website">
+        <div class="sc-icon">🎨</div>
+        <h3>Prémium Weboldal Design</h3>
+        <p>Modern, gyors és SEO-optimalizált weboldal, amely bizalmat épít és ügyfeleket hoz. Minden oldal egyedi, sablonmentes megoldás.</p>
+        <div class="service-price">Egyedi ajánlat</div>
+        <div class="service-price-note">Landingpage-től teljes weboldalig</div>
+        <ul class="sc-features">
+            <li class="sc-feature">Egyedi HTML / CSS / JS fejlesztés</li>
+            <li class="sc-feature">SEO-optimalizált struktúra</li>
+            <li class="sc-feature">Google Fonts & modern arculat</li>
+            <li class="sc-feature">Gyors betöltési idő</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline">Érdeklődöm →</a>
     </div>
 
-    <!-- CTA BANNER -->
-    <div class="services-cta reveal" style="max-width: 1000px; margin: 0 auto 80px; padding: 60px;">
-        <h2>Nem tudja, mekkora a vesztesége?</h2>
-        <p>Írjon nekem – ingyenesen kiszámoljuk, mennyi időt és pénzt spórolhatna egy automata rendszerrel.</p>
-        <a href="contact.html" class="btn btn-white btn-lg" id="services-cta-btn">Kérem az ingyenes weboldal-tervet →</a>
+    <div class="service-card reveal" id="svc-admin">
+        <div class="sc-icon">⚙️</div>
+        <h3>Admin Irányítópult</h3>
+        <p>Teljes körű adminisztrációs felület, ahol a vállalkozás tulajdonosa kezeli a foglalásokat, blokkol időpontokat és lát statisztikákat.</p>
+        <div class="service-price">Csomagban</div>
+        <div class="service-price-note">Minden foglalási rendszerhez jár</div>
+        <ul class="sc-features">
+            <li class="sc-feature">Heti / napi naptárnézet</li>
+            <li class="sc-feature">Foglalások jóváhagyása / elutasítása</li>
+            <li class="sc-feature">Naptár zárás és blokkolás</li>
+            <li class="sc-feature">Telefonos foglalás rögzítése</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline">Érdeklődöm →</a>
     </div>
 
+    <div class="service-card reveal" id="svc-firebase">
+        <div class="sc-icon">🔥</div>
+        <h3>Firebase Backend</h3>
+        <p>Biztonságos, skálázható felhős adatbázis a foglalások kezeléséhez. Valós idejű szinkron, nulla szerver, nulla havidíj.</p>
+        <div class="service-price">0 Ft / hó</div>
+        <div class="service-price-note">A Firebase ingyenes tervén elfér</div>
+        <ul class="sc-features">
+            <li class="sc-feature">Valós idejű adatszinkronizáció</li>
+            <li class="sc-feature">Biztonságos Firestore adatbázis</li>
+            <li class="sc-feature">Google Authentication (igény esetén)</li>
+            <li class="sc-feature">Automatikus biztonsági mentés</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline">Érdeklődöm →</a>
+    </div>
+
+    <div class="service-card reveal" id="svc-email">
+        <div class="sc-icon">📧</div>
+        <h3>E-mail Értesítési Rendszer</h3>
+        <p>Automatikus visszaigazoló e-mailek foglalás után, emlékeztetők az ügyfélnek – az Ön Gmail fiókjából vagy EmailJS-en keresztül.</p>
+        <div class="service-price">Csomagban</div>
+        <div class="service-price-note">Az esetek többségében 0 Ft / hó</div>
+        <ul class="sc-features">
+            <li class="sc-feature">Automatikus foglalás-visszaigazolás</li>
+            <li class="sc-feature">Saját e-mail cím küldőnek</li>
+            <li class="sc-feature">Testreszabható e-mail tartalom</li>
+            <li class="sc-feature">Admin értesítés új foglalásról</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline">Érdeklődöm →</a>
+    </div>
+
+    <div class="service-card reveal" id="svc-support">
+        <div class="sc-icon">🛠️</div>
+        <h3>Karbantartás & Támogatás</h3>
+        <p>Az átadás után sem hagy magára. Gyors hibajavítás, kisebb módosítások, bővítések – szóban egyeztetett feltételek alapján.</p>
+        <div class="service-price">Rugalmas</div>
+        <div class="service-price-note">Ár / szükséglet szerint</div>
+        <ul class="sc-features">
+            <li class="sc-feature">Gyors hibajavítás (48 órán belül)</li>
+            <li class="sc-feature">Tartalom- és adat-módosítás</li>
+            <li class="sc-feature">Új funkciók hozzáadása</li>
+            <li class="sc-feature">Domain & hosting segítség</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline">Érdeklődöm →</a>
+    </div>
+
+</div>
+
+<!-- SERVICES CTA -->
+<div class="services-cta reveal">
+    <span class="section-tag">ELSŐ LÉPÉS</span>
+    <h2>Kezdjük el közösen!</h2>
+    <p>Ingyenes konzultáció, kötelezettség nélkül. Megmutatom, hogyan nézne ki az Ön vállalkozásának a foglalási rendszere.</p>
+    <a href="contact.html" class="btn btn-gold btn-lg" id="services-cta">Kérem az ingyenes weboldal-tervet →</a>
 </div>
 
 <!-- FOOTER -->

@@ -9,150 +9,156 @@
 </head>
 <body>
 
-<nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo">
-        <div class="logo-mark">KZ</div>
-        <span class="logo-name">Kerekes Zsombor</span>
-    </a>
-    <div class="nav-links">
-        <a href="index.html" class="nav-link">Kezdőlap</a>
-        <a href="services.html" class="nav-link">Szolgáltatások</a>
-        <a href="portfolio.html" class="nav-link">Portfólió</a>
-        <a href="about.html" class="nav-link">Rólam</a>
-        <a href="contact.html" class="nav-link">Kapcsolat</a>
+<!-- NAV -->
+<nav class="nav" id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo-mark">KZ</a>
+        <div class="nav-links">
+            <a href="index.html">Kezdőlap</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="portfolio.html" class="active">Portfólió</a>
+            <a href="about.html">Rólam</a>
+            <a href="contact.html">Kapcsolat</a>
+            <a href="contact.html" class="nav-cta">Ingyenes terv →</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
-    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
-        <span></span><span></span><span></span>
-    </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">Kezdőlap</a>
-    <a href="services.html" class="nav-link">Szolgáltatások</a>
-    <a href="portfolio.html" class="nav-link">Portfólió</a>
-    <a href="about.html" class="nav-link">Rólam</a>
-    <a href="contact.html" class="nav-link">Kapcsolat</a>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Kezdőlap</a>
+    <a href="services.html">Szolgáltatások</a>
+    <a href="portfolio.html">Portfólió</a>
+    <a href="about.html">Rólam</a>
+    <a href="contact.html">Kapcsolat</a>
+    <a href="contact.html" class="nav-cta">Ingyenes weboldal-terv →</a>
 </div>
 
-<div class="page-wrap">
-
-    <!-- HERO -->
-    <div class="portfolio-hero reveal">
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-inner">
         <span class="section-tag">PORTFÓLIÓ</span>
-        <h1 class="section-title" style="max-width:600px; margin: 0 auto 16px;">Elkészült projektek</h1>
-        <p class="section-desc" style="margin: 0 auto; max-width: 540px;">Különböző iparágakban megvalósított weboldalak és foglalási rendszerek – minden projekt teljesen egyedi volt.</p>
+        <h1>Elkészült <span class="gold-word">projektek</span></h1>
+        <p>Különböző iparágakban megvalósított weboldalak és foglalási rendszerek – minden projekt teljesen egyedi volt.</p>
+    </div>
+</div>
+
+<!-- PORTFOLIO GRID -->
+<div class="portfolio-grid-full">
+
+    <div class="portfolio-card reveal" id="proj-dental">
+        <div class="portfolio-img">
+            <img src="img_dental.png" alt="Fogászati online foglalási rendszer weboldal">
+        </div>
+        <div class="portfolio-info">
+            <div class="portfolio-tags">
+                <span class="p-tag">Online foglalás</span>
+                <span class="p-tag">Firebase</span>
+                <span class="p-tag">Admin dashboard</span>
+                <span class="p-tag">E-mail értesítés</span>
+            </div>
+            <h3>Fogászati Klinika – Booking Rendszer</h3>
+            <p>Prémium fogászati weboldal teljes körű online foglalással. Az ügyfelek kiválaszthatják az orvost, a kezelés típusát és a szabad időpontot. A recepció egyetlen dashboardon látja és kezeli az összes foglalást.</p>
+            <div class="portfolio-features">
+                <span class="pfeat">Orvos- és kezeléstípus választó</span>
+                <span class="pfeat">Valós idejű Firebase szinkron</span>
+                <span class="pfeat">Automatikus e-mail visszaigazolás</span>
+                <span class="pfeat">Admin: jóváhagyás, elutasítás, zárás</span>
+            </div>
+            <div class="portfolio-meta">
+                <div class="pm-item">Iparág: <strong>Fogászat / Egészségügy</strong></div>
+                <div class="pm-item">Időtartam: <strong>~3 hét</strong></div>
+            </div>
+        </div>
     </div>
 
-    <!-- PORTFOLIO GRID -->
-    <div class="portfolio-grid" style="padding: 80px 60px;">
-
-        <div class="proj-card reveal" id="proj-dental">
-            <div class="proj-img-wrap">
-                <img src="img_dental.png" alt="Fogászati online foglalási rendszer weboldal">
-                <div class="proj-sector">Fogászat / Egészségügy</div>
+    <div class="portfolio-card reveal" id="proj-tire">
+        <div class="portfolio-img">
+            <img src="img_tire.png" alt="Gumiszerviz online foglalási rendszer">
+        </div>
+        <div class="portfolio-info">
+            <div class="portfolio-tags">
+                <span class="p-tag">Kapacitáskezelés</span>
+                <span class="p-tag">Heti naptár</span>
+                <span class="p-tag">Gumi konfigurátor</span>
+                <span class="p-tag">Firebase</span>
             </div>
-            <div class="proj-body">
-                <div class="proj-tags">
-                    <span class="ptag">Online foglalás</span>
-                    <span class="ptag">Firebase</span>
-                    <span class="ptag">Admin dashboard</span>
-                    <span class="ptag">E-mail értesítés</span>
-                </div>
-                <h3>Fogászati Klinika – Booking Rendszer</h3>
-                <p>Prémium fogászati weboldal teljes körű online foglalással. Az ügyfelek kiválaszthatják az orvost, a kezelés típusát és a szabad időpontot. A recepció egyetlen dashboardon látja és kezeli az összes foglalást.</p>
-                <div class="proj-features">
-                    <div class="proj-feat">Orvos- és kezeléstípus választó</div>
-                    <div class="proj-feat">Valós idejű naptár frissítés (Firebase)</div>
-                    <div class="proj-feat">Automatikus e-mail visszaigazolás</div>
-                    <div class="proj-feat">Admin: jóváhagyás, elutasítás, naptár zárás</div>
-                </div>
-                <a href="contact.html" class="btn btn-primary btn-sm">Hasonlót szeretnék →</a>
+            <h3>Autószerviz – Heti Kapacitáskezelő</h3>
+            <p>A foglalási rendszer motorháza: naponta beállítható állásszám (kapacitás), gumimáret-választó csúszkával. Az admin közvetlenül a naptárból rögzíthet telefonos foglalásokat is.</p>
+            <div class="portfolio-features">
+                <span class="pfeat">Naponta beállítható max. kapacitás</span>
+                <span class="pfeat">Scrollozható gumimáret konfigurátor</span>
+                <span class="pfeat">Telefonos foglalás admin rögzítése</span>
+                <span class="pfeat">Heti naptár nézet műhely számára</span>
+            </div>
+            <div class="portfolio-meta">
+                <div class="pm-item">Iparág: <strong>Autószerviz / Gumiszerviz</strong></div>
+                <div class="pm-item">Időtartam: <strong>~2.5 hét</strong></div>
             </div>
         </div>
-
-        <div class="proj-card reveal" id="proj-tire">
-            <div class="proj-img-wrap">
-                <img src="img_tire.png" alt="Gumiszerviz online foglalási rendszer">
-                <div class="proj-sector">Autószerviz / Gumiszerviz</div>
-            </div>
-            <div class="proj-body">
-                <div class="proj-tags">
-                    <span class="ptag">Kapacitáskezelés</span>
-                    <span class="ptag">Heti naptár</span>
-                    <span class="ptag">Gumi konfigurátor</span>
-                    <span class="ptag">Firebase</span>
-                </div>
-                <h3>Autószerviz – Heti Kapacitáskezelő</h3>
-                <p>A foglalási rendszer motorháza: naponta beállítható állásszám (kapacitás), gumimáret-választó csúszkával. Az admin közvetlenül a naptárból rögzíthet telefonos foglalásokat is.</p>
-                <div class="proj-features">
-                    <div class="proj-feat">Naponta beállítható max. kapacitás (állások)</div>
-                    <div class="proj-feat">Scrollozható gumimáret konfigurátor</div>
-                    <div class="proj-feat">Telefonos foglalás admin rögzítése</div>
-                    <div class="proj-feat">Heti naptár nézet műhely számára</div>
-                </div>
-                <a href="contact.html" class="btn btn-primary btn-sm">Hasonlót szeretnék →</a>
-            </div>
-        </div>
-
-        <div class="proj-card reveal" id="proj-dog">
-            <div class="proj-img-wrap">
-                <img src="img_dog.png" alt="Kutyakozmetika weboldal foglalással">
-                <div class="proj-sector">Kutyakozmetika / Állatszalon</div>
-            </div>
-            <div class="proj-body">
-                <div class="proj-tags">
-                    <span class="ptag">Szolgáltatáslista</span>
-                    <span class="ptag">Időpontfoglalás</span>
-                    <span class="ptag">Mobilbarát</span>
-                    <span class="ptag">Arculat</span>
-                </div>
-                <h3>Kisállatszalon – Booking &amp; Bemutatkozó Oldal</h3>
-                <p>Játékos, de professzionális kutyakozmetikai weboldal. A szolgáltatáslista árakkal, fotógaléria, és egy egyszerűen használható foglalási rendszer minden kutya-tulajdonosnak.</p>
-                <div class="proj-features">
-                    <div class="proj-feat">Részletes szolgáltatáslista árakkal</div>
-                    <div class="proj-feat">Fotógaléria szekció</div>
-                    <div class="proj-feat">Állat fajtája + mérete alapján ár-kalkulátor</div>
-                    <div class="proj-feat">Egyszerű, gyors foglalóűrlap</div>
-                </div>
-                <a href="contact.html" class="btn btn-primary btn-sm">Hasonlót szeretnék →</a>
-            </div>
-        </div>
-
-        <div class="proj-card reveal" id="proj-salon">
-            <div class="proj-img-wrap">
-                <img src="img_salon.png" alt="Szépségszalon weboldal foglalással">
-                <div class="proj-sector">Szépségszalon / Fodrász</div>
-            </div>
-            <div class="proj-body">
-                <div class="proj-tags">
-                    <span class="ptag">Staff naptár</span>
-                    <span class="ptag">Fodrász-választó</span>
-                    <span class="ptag">Jóváhagyásos</span>
-                    <span class="ptag">Elegáns dizájn</span>
-                </div>
-                <h3>Szépségszalon – Fodrász Staff Naptár</h3>
-                <p>Elegáns szalonweboldal, ahol az ügyfél kiválasztja a fodrászt, majd lát az illető számára szabad időpontokat. A szalon jóváhagyja a foglalást, az ügyfél visszaigazolást kap.</p>
-                <div class="proj-features">
-                    <div class="proj-feat">Fodrász-specifikus naptár nézet</div>
-                    <div class="proj-feat">Jóváhagyásos foglalási folyamat</div>
-                    <div class="proj-feat">Munkatárs profilok bemutatása</div>
-                    <div class="proj-feat">Árlista és szolgáltatások szekció</div>
-                </div>
-                <a href="contact.html" class="btn btn-primary btn-sm">Hasonlót szeretnék →</a>
-            </div>
-        </div>
-
     </div>
 
-    <!-- HOW IT FITS YOUR BUSINESS -->
-    <div style="background: linear-gradient(135deg, #eef2ff, #f5f3ff); padding: 80px 60px; text-align: center; margin-top: -20px;">
-        <span class="section-tag">AZ ÖN IPARÁGA</span>
-        <h2 class="section-title" style="max-width: 600px; margin: 0 auto 16px;">Más területen dolgozik?</h2>
-        <p class="section-desc" style="margin: 0 auto 36px;">A foglalási rendszer bármilyen iparágra adaptálható. Ha az Ön vállalkozása nincs a listán, az sem probléma – megoldjuk.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg" id="portfolio-cta">Meséljem el az elképzelésemet →</a>
+    <div class="portfolio-card reveal" id="proj-dog">
+        <div class="portfolio-img">
+            <img src="img_dog.png" alt="Kutyakozmetika weboldal foglalással">
+        </div>
+        <div class="portfolio-info">
+            <div class="portfolio-tags">
+                <span class="p-tag">Szolgáltatáslista</span>
+                <span class="p-tag">Időpontfoglalás</span>
+                <span class="p-tag">Mobilbarát</span>
+                <span class="p-tag">Arculat</span>
+            </div>
+            <h3>Kisállatszalon – Booking & Bemutatkozó Oldal</h3>
+            <p>Játékos, de professzionális kutyakozmetikai weboldal. A szolgáltatáslista árakkal, fotógaléria, és egy egyszerűen használható foglalási rendszer minden kutya-tulajdonosnak.</p>
+            <div class="portfolio-features">
+                <span class="pfeat">Részletes szolgáltatáslista árakkal</span>
+                <span class="pfeat">Fotógaléria szekció</span>
+                <span class="pfeat">Állat fajtája + mérete alapján ár-kalkulátor</span>
+                <span class="pfeat">Egyszerű, gyors foglalóűrlap</span>
+            </div>
+            <div class="portfolio-meta">
+                <div class="pm-item">Iparág: <strong>Kutyakozmetika / Állatszalon</strong></div>
+                <div class="pm-item">Időtartam: <strong>~2 hét</strong></div>
+            </div>
+        </div>
     </div>
 
+    <div class="portfolio-card reveal" id="proj-salon">
+        <div class="portfolio-img">
+            <img src="img_salon.png" alt="Szépségszalon weboldal foglalással">
+        </div>
+        <div class="portfolio-info">
+            <div class="portfolio-tags">
+                <span class="p-tag">Staff naptár</span>
+                <span class="p-tag">Fodrász-választó</span>
+                <span class="p-tag">Jóváhagyásos</span>
+                <span class="p-tag">Elegáns dizájn</span>
+            </div>
+            <h3>Szépségszalon – Fodrász Staff Naptár</h3>
+            <p>Elegáns szalonweboldal, ahol az ügyfél kiválasztja a fodrászt, majd lát az illető számára szabad időpontokat. A szalon jóváhagyja a foglalást, az ügyfél visszaigazolást kap.</p>
+            <div class="portfolio-features">
+                <span class="pfeat">Fodrász-specifikus naptár nézet</span>
+                <span class="pfeat">Jóváhagyásos foglalási folyamat</span>
+                <span class="pfeat">Munkatárs profilok bemutatása</span>
+                <span class="pfeat">Árlista és szolgáltatások szekció</span>
+            </div>
+            <div class="portfolio-meta">
+                <div class="pm-item">Iparág: <strong>Szépségszalon / Fodrász</strong></div>
+                <div class="pm-item">Időtartam: <strong>~3 hét</strong></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- OTHER INDUSTRIES CTA -->
+<div class="services-cta reveal">
+    <span class="section-tag">AZ ÖN IPARÁGA</span>
+    <h2>Más területen dolgozik?</h2>
+    <p>A foglalási rendszer bármilyen iparágra adaptálható. Ha az Ön vállalkozása nincs a listán, az sem probléma – megoldjuk.</p>
+    <a href="contact.html" class="btn btn-gold btn-lg" id="portfolio-cta">Meséljem el az elképzelésemet →</a>
 </div>
 
 <!-- FOOTER -->

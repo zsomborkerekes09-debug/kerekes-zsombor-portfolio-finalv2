@@ -9,251 +9,236 @@
 </head>
 <body>
 
-<nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo">
-        <div class="logo-mark">KZ</div>
-        <span class="logo-name">Kerekes Zsombor</span>
-    </a>
-    <div class="nav-links">
-        <a href="index.html" class="nav-link">Kezdőlap</a>
-        <a href="services.html" class="nav-link">Szolgáltatások</a>
-        <a href="portfolio.html" class="nav-link">Portfólió</a>
-        <a href="about.html" class="nav-link">Rólam</a>
-        <a href="contact.html" class="nav-link">Kapcsolat</a>
+<!-- NAV -->
+<nav class="nav" id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo-mark">KZ</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Kezdőlap</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="portfolio.html">Portfólió</a>
+            <a href="about.html">Rólam</a>
+            <a href="contact.html">Kapcsolat</a>
+            <a href="contact.html" class="nav-cta">Ingyenes terv →</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
-    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
-        <span></span><span></span><span></span>
-    </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">Kezdőlap</a>
-    <a href="services.html" class="nav-link">Szolgáltatások</a>
-    <a href="portfolio.html" class="nav-link">Portfólió</a>
-    <a href="about.html" class="nav-link">Rólam</a>
-    <a href="contact.html" class="nav-link">Kapcsolat</a>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Kezdőlap</a>
+    <a href="services.html">Szolgáltatások</a>
+    <a href="portfolio.html">Portfólió</a>
+    <a href="about.html">Rólam</a>
+    <a href="contact.html">Kapcsolat</a>
+    <a href="contact.html" class="nav-cta">Ingyenes weboldal-terv →</a>
 </div>
 
-<div class="page-wrap">
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-left reveal">
-            <div class="hero-badge">
-                <span class="badge-pulse"></span>
-                Elérhető új projektekre
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-left reveal">
+        <div class="hero-eyebrow">
+            <span class="dot"></span>
+            Elérhető új projektekre
+        </div>
+        <h1 class="hero-title">
+            Tele naptár.<br>
+            <span class="line-accent">Nulla telefonhívás.</span>
+        </h1>
+        <p class="hero-subtitle">
+            Online foglalórendszert építek fodrászoknak, masszőröknek és szalonoknak —
+            hogy az ügyfelek éjjel 11-kor is tudjanak időpontot foglalni, nem csak nyitvatartási időben.
+        </p>
+        <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg" id="hero-cta">Mutasd meg, hogyan nézne ki az én vállalkozásom →</a>
+        </div>
+        <div class="hero-stats">
+            <div>
+                <span class="h-stat-num" data-count="3" data-suffix=" hét">3 hét</span>
+                <div class="h-stat-label">Átlagos élesítés</div>
             </div>
-            <h1 class="hero-title">
-                Tele naptár.<br>
-                <span class="grad-text">Nulla telefonhívás.</span>
-            </h1>
-            <p class="hero-sub">
-                Online foglalórendszert építek fodrászoknak, masszőröknek és szalonoknak — 
-                hogy az ügyfelek éjjel 11-kor is tudjanak időpontot foglalni, nem csak nyitvatartási időben.
-            </p>
-            <div class="hero-actions">
-                <a href="contact.html" class="btn btn-primary btn-lg" id="hero-cta">Mutasd meg, hogyan nézne ki az én vállalkozásom →</a>
+            <div>
+                <span class="h-stat-num" data-count="0" data-suffix=" Ft">0 Ft</span>
+                <div class="h-stat-label">Fenntartási díj / hó</div>
             </div>
-            <div class="hero-stats">
-                <div>
-                    <span class="h-stat-num" data-count="3" data-suffix=" hét">3 hét</span>
-                    <div class="h-stat-label">Átlagos élesítés</div>
-                </div>
-                <div>
-                    <span class="h-stat-num" data-count="0" data-suffix=" Ft">0 Ft</span>
-                    <div class="h-stat-label">Fenntartási díj / hó</div>
-                </div>
-                <div>
-                    <span class="h-stat-num" data-count="48" data-suffix=" óra">48 óra</span>
-                    <div class="h-stat-label">Alatt visszahívom</div>
-                </div>
+            <div>
+                <span class="h-stat-num" data-count="48" data-suffix=" óra">48 óra</span>
+                <div class="h-stat-label">Alatt visszahívom</div>
             </div>
-        </div>
-        <div class="hero-right reveal">
-            <div class="booking-card">
-                <div class="bc-header">
-                    <div class="bc-clinic">🏥 Online Foglalás</div>
-                    <div class="bc-sub">Válasszon szabad időpontot</div>
-                </div>
-                <div class="bc-body">
-                    <div class="bc-calendar">
-                        <div class="bc-cal-header">
-                            <div class="bc-cal-nav">◀</div>
-                            <span>Április 2026</span>
-                            <div class="bc-cal-nav">▶</div>
-                        </div>
-                        <div class="bc-grid">
-                            <div class="bc-day hd">H</div>
-                            <div class="bc-day hd">K</div>
-                            <div class="bc-day hd">Sz</div>
-                            <div class="bc-day hd">Cs</div>
-                            <div class="bc-day hd">P</div>
-                            <div class="bc-day hd">Sz</div>
-                            <div class="bc-day hd">V</div>
-                            <div class="bc-day">1</div>
-                            <div class="bc-day avail">2</div>
-                            <div class="bc-day avail">3</div>
-                            <div class="bc-day avail">4</div>
-                            <div class="bc-day avail">5</div>
-                            <div class="bc-day">6</div>
-                            <div class="bc-day">7</div>
-                            <div class="bc-day avail">8</div>
-                            <div class="bc-day booked">9</div>
-                            <div class="bc-day avail">10</div>
-                            <div class="bc-day avail">11</div>
-                            <div class="bc-day booked">12</div>
-                            <div class="bc-day">13</div>
-                            <div class="bc-day">14</div>
-                            <div class="bc-day today">15</div>
-                            <div class="bc-day sel">16</div>
-                            <div class="bc-day avail">17</div>
-                            <div class="bc-day avail">18</div>
-                            <div class="bc-day avail">19</div>
-                        </div>
-                    </div>
-                    <div class="bc-slots">
-                        <div class="bc-slot taken">
-                            <span>09:00 – 09:45</span>
-                            <span class="bc-slot-badge">Foglalt</span>
-                        </div>
-                        <div class="bc-slot picked">
-                            <span>10:00 – 10:45</span>
-                            <span class="bc-slot-badge">Kiválasztva ✓</span>
-                        </div>
-                        <div class="bc-slot free">
-                            <span>11:00 – 11:45</span>
-                            <span class="bc-slot-badge">Szabad</span>
-                        </div>
-                    </div>
-                    <button class="bc-btn">Időpont lefoglalása →</button>
-                </div>
-            </div>
-            <div class="hero-chip chip-1">☁ Firebase szinkron</div>
-            <div class="hero-chip chip-2">📱 Mobilbarát</div>
-            <div class="hero-chip chip-3">⚡ Admin felület</div>
-        </div>
-    </section>
-
-    <!-- QUICK STRIP -->
-    <div class="quick-strip reveal">
-        <div class="qs-item">
-            <div class="qs-icon">📅</div>
-            <h4>Online Foglalás</h4>
-            <p>Valós idejű naptár, automatikus értesítések</p>
-        </div>
-        <div class="qs-item">
-            <div class="qs-icon">⚙️</div>
-            <h4>Admin Irányítópult</h4>
-            <p>Teljes kontroll a foglalások felett</p>
-        </div>
-        <div class="qs-item">
-            <div class="qs-icon">🔥</div>
-            <h4>Firebase Backend</h4>
-            <p>Felhős, biztonságos adatkezelés</p>
-        </div>
-        <div class="qs-item">
-            <div class="qs-icon">📱</div>
-            <h4>Mobilbarát</h4>
-            <p>100% reszponzív minden eszközön</p>
         </div>
     </div>
-
-    <!-- TEASER: SERVICES -->
-    <div class="teaser reveal">
-        <div class="teaser-text">
-            <span class="section-tag">A MEGOLDÁS</span>
-            <h2 class="section-title">Amit kap — és ami elmarad, ha nem vezet be foglalórendszert</h2>
-            <p class="section-desc">Egy átlag fodrász hetente 8-12 lefoglalható időpontot veszít el, mert az érdeklődő nem akar telefonálni. Ez havi 30-50 ezer forint kiesett bevétel.</p>
-            <a href="services.html" class="btn btn-primary" style="margin-top: 8px;">Összes szolgáltatás →</a>
+    <div class="hero-right reveal">
+        <div class="booking-card">
+            <div class="bc-header">
+                <div class="bc-clinic">🏥 Online Foglalás</div>
+                <div class="bc-sub">Válasszon szabad időpontot</div>
+            </div>
+            <div class="bc-body">
+                <div class="bc-calendar">
+                    <div class="bc-cal-header">
+                        <div class="bc-cal-nav">◀</div>
+                        <span>Április 2026</span>
+                        <div class="bc-cal-nav">▶</div>
+                    </div>
+                    <div class="bc-grid">
+                        <div class="bc-day hd">H</div><div class="bc-day hd">K</div>
+                        <div class="bc-day hd">Sz</div><div class="bc-day hd">Cs</div>
+                        <div class="bc-day hd">P</div><div class="bc-day hd">Sz</div>
+                        <div class="bc-day hd">V</div>
+                        <div class="bc-day">1</div>
+                        <div class="bc-day avail">2</div><div class="bc-day avail">3</div>
+                        <div class="bc-day avail">4</div><div class="bc-day avail">5</div>
+                        <div class="bc-day">6</div><div class="bc-day">7</div>
+                        <div class="bc-day avail">8</div><div class="bc-day booked">9</div>
+                        <div class="bc-day avail">10</div><div class="bc-day avail">11</div>
+                        <div class="bc-day booked">12</div><div class="bc-day">13</div>
+                        <div class="bc-day">14</div>
+                        <div class="bc-day today">15</div><div class="bc-day sel">16</div>
+                        <div class="bc-day avail">17</div><div class="bc-day avail">18</div>
+                        <div class="bc-day avail">19</div>
+                    </div>
+                </div>
+                <div class="bc-slots">
+                    <div class="bc-slot taken">
+                        <span>09:00 – 09:45</span>
+                        <span class="bc-slot-badge">Foglalt</span>
+                    </div>
+                    <div class="bc-slot picked">
+                        <span>10:00 – 10:45</span>
+                        <span class="bc-slot-badge">Kiválasztva ✓</span>
+                    </div>
+                    <div class="bc-slot free">
+                        <span>11:00 – 11:45</span>
+                        <span class="bc-slot-badge">Szabad</span>
+                    </div>
+                </div>
+                <button class="bc-btn">Időpont lefoglalása →</button>
+            </div>
         </div>
-        <div class="teaser-card">
-            <ul class="tc-list">
-                <li class="tc-item">
-                    <div class="tc-num">1</div>
-                    <div class="tc-body">
-                        <strong>Online foglalási rendszer</strong>
-                        <span>Valós idejű naptár, automatikus visszaigazolás</span>
-                    </div>
-                </li>
-                <li class="tc-item">
-                    <div class="tc-num">2</div>
-                    <div class="tc-body">
-                        <strong>Prémium weboldal design</strong>
-                        <span>Modern, gyors, SEO-optimalizált oldal</span>
-                    </div>
-                </li>
-                <li class="tc-item">
-                    <div class="tc-num">3</div>
-                    <div class="tc-body">
-                        <strong>Admin irányítópult</strong>
-                        <span>Foglalások, ügyfelek, naptár egy helyen</span>
-                    </div>
-                </li>
-                <li class="tc-item">
-                    <div class="tc-num">4</div>
-                    <div class="tc-body">
-                        <strong>Firebase felhős háttér</strong>
-                        <span>Biztonságos, skálázható adatbázis</span>
-                    </div>
-                </li>
-            </ul>
+        <div class="hero-chip chip-1">☁ Firebase szinkron</div>
+        <div class="hero-chip chip-2">📱 Mobilbarát</div>
+        <div class="hero-chip chip-3">⚡ Admin felület</div>
+    </div>
+</section>
+
+<!-- QUICK STRIP -->
+<div class="quick-strip reveal">
+    <div class="qs-item">
+        <div class="qs-icon">📅</div>
+        <h4>Online Foglalás</h4>
+        <p>Valós idejű naptár, automatikus értesítések</p>
+    </div>
+    <div class="qs-item">
+        <div class="qs-icon">⚙️</div>
+        <h4>Admin Irányítópult</h4>
+        <p>Teljes kontroll a foglalások felett</p>
+    </div>
+    <div class="qs-item">
+        <div class="qs-icon">🔥</div>
+        <h4>Firebase Backend</h4>
+        <p>Felhős, biztonságos adatkezelés</p>
+    </div>
+    <div class="qs-item">
+        <div class="qs-icon">📱</div>
+        <h4>Mobilbarát</h4>
+        <p>100% reszponzív minden eszközön</p>
+    </div>
+</div>
+
+<!-- TEASER: SERVICES -->
+<div class="teaser reveal">
+    <div class="teaser-text">
+        <span class="section-tag">A MEGOLDÁS</span>
+        <h2 class="section-title">Amit kap — és ami elmarad, ha nem vezet be foglalórendszert</h2>
+        <p class="section-desc">Egy átlag fodrász hetente 8-12 lefoglalható időpontot veszít el, mert az érdeklődő nem akar telefonálni. Ez havi 30-50 ezer forint kiesett bevétel.</p>
+        <a href="services.html" class="btn btn-primary" style="margin-top: 20px;">Összes szolgáltatás →</a>
+    </div>
+    <div class="teaser-card">
+        <ul class="tc-list">
+            <li class="tc-item">
+                <div class="tc-num">1</div>
+                <div class="tc-body">
+                    <strong>Online foglalási rendszer</strong>
+                    <span>Valós idejű naptár, automatikus visszaigazolás</span>
+                </div>
+            </li>
+            <li class="tc-item">
+                <div class="tc-num">2</div>
+                <div class="tc-body">
+                    <strong>Prémium weboldal design</strong>
+                    <span>Modern, gyors, SEO-optimalizált oldal</span>
+                </div>
+            </li>
+            <li class="tc-item">
+                <div class="tc-num">3</div>
+                <div class="tc-body">
+                    <strong>Admin irányítópult</strong>
+                    <span>Foglalások, ügyfelek, naptár egy helyen</span>
+                </div>
+            </li>
+            <li class="tc-item">
+                <div class="tc-num">4</div>
+                <div class="tc-body">
+                    <strong>Firebase felhős háttér</strong>
+                    <span>Biztonságos, skálázható adatbázis</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- MINI PORTFOLIO PREVIEW -->
+<div class="home-portfolio reveal">
+    <div class="section-header">
+        <span class="section-tag">PORTFÓLIÓ</span>
+        <h2 class="section-title">Referencia projektek</h2>
+        <p class="section-desc">Valódi munkák különböző iparágakban – nézze meg, mit tudok.</p>
+    </div>
+    <div class="hp-grid">
+        <div class="hp-card">
+            <div class="hp-img"><img src="img_dental.png" alt="Fogászati foglalási rendszer"></div>
+            <div class="hp-info">
+                <div class="hp-sector">Fogászat</div>
+                <h4>Prémium Fogászati Weboldal</h4>
+                <p>Online foglalás, admin dashboard, Firebase</p>
+            </div>
+        </div>
+        <div class="hp-card">
+            <div class="hp-img"><img src="img_tire.png" alt="Gumiszerviz foglalási rendszer"></div>
+            <div class="hp-info">
+                <div class="hp-sector">Gumiszerviz</div>
+                <h4>Autószerviz Booking</h4>
+                <p>Heti kapacitáskezelő, állás-foglalás</p>
+            </div>
+        </div>
+        <div class="hp-card">
+            <div class="hp-img"><img src="img_dog.png" alt="Kutyakozmetika weboldal"></div>
+            <div class="hp-info">
+                <div class="hp-sector">Kutyakozmetika</div>
+                <h4>Kisállatszalon Platform</h4>
+                <p>Szolgáltatáslista, időpontfoglaló</p>
+            </div>
+        </div>
+        <div class="hp-card">
+            <div class="hp-img"><img src="img_salon.png" alt="Szépségszalon weboldal"></div>
+            <div class="hp-info">
+                <div class="hp-sector">Szépségszalon</div>
+                <h4>Szalonmenedzsment Rendszer</h4>
+                <p>Fodrász-naptár, jóváhagyásos foglalás</p>
+            </div>
         </div>
     </div>
-
-    <!-- MINI PORTFOLIO PREVIEW -->
-    <div class="home-portfolio reveal">
-        <div class="section-header">
-            <span class="section-tag">PORTFÓLIÓ</span>
-            <h2 class="section-title">Referencia projektek</h2>
-            <p class="section-desc">Valódi munkák különböző iparágakban – nézze meg, mit tudok.</p>
-        </div>
-        <div class="hp-grid">
-            <div class="hp-card">
-                <div class="hp-img"><img src="img_dental.png" alt="Fogászati foglalási rendszer"></div>
-                <div class="hp-info">
-                    <div class="hp-sector">Fogászat</div>
-                    <h4>Prémium Fogászati Weboldal</h4>
-                    <p>Online foglalás, admin dashboard, Firebase</p>
-                </div>
-            </div>
-            <div class="hp-card">
-                <div class="hp-img"><img src="img_tire.png" alt="Gumiszerviz foglalási rendszer"></div>
-                <div class="hp-info">
-                    <div class="hp-sector">Gumiszerviz</div>
-                    <h4>Autószerviz Booking</h4>
-                    <p>Heti kapacitáskezelő, állás-foglalás</p>
-                </div>
-            </div>
-            <div class="hp-card">
-                <div class="hp-img"><img src="img_dog.png" alt="Kutyakozmetika webolal"></div>
-                <div class="hp-info">
-                    <div class="hp-sector">Kutyakozmetika</div>
-                    <h4>Kisállatszalon Platform</h4>
-                    <p>Szolgáltatáslista, időpontfoglaló</p>
-                </div>
-            </div>
-            <div class="hp-card">
-                <div class="hp-img"><img src="img_salon.png" alt="Szépségszalon weboldal"></div>
-                <div class="hp-info">
-                    <div class="hp-sector">Szépségszalon</div>
-                    <h4>Szalonmenedzsment Rendszer</h4>
-                    <p>Fodrász-naptár, jóváhagyásos foglalás</p>
-                </div>
-            </div>
-        </div>
-        <div style="text-align:center; margin-top: 40px;">
-            <a href="portfolio.html" class="btn btn-outline">Összes referencia megtekintése →</a>
-        </div>
+    <div style="text-align:center; margin-top: 40px;">
+        <a href="portfolio.html" class="btn btn-outline">Összes referencia megtekintése →</a>
     </div>
+</div>
 
-    <!-- HOME CTA -->
-    <div class="home-cta reveal">
-        <h2>Ne hagyjon több pénzt az asztalon!</h2>
-        <p>Mutatok egy tervet, hogyan teheti automatikussá a naptárát.</p>
-        <a href="contact.html" class="btn btn-white btn-lg" id="home-bottom-cta">Kérem az ingyenes weboldal-tervet →</a>
-    </div>
-
+<!-- HOME CTA -->
+<div class="home-cta reveal">
+    <h2>Ne hagyjon több pénzt az asztalon!</h2>
+    <p>Mutatok egy tervet, hogyan teheti automatikussá a naptárát.</p>
+    <a href="contact.html" class="btn btn-white btn-lg" id="home-bottom-cta">Kérem az ingyenes weboldal-tervet →</a>
 </div>
 
 <!-- FOOTER -->

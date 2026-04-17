@@ -3,214 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rólam &amp; Folyamat – Kerekes Zsombor Webfejlesztő</title>
+    <title>Rólam & Folyamat – Kerekes Zsombor Webfejlesztő</title>
     <meta name="description" content="Kerekes Zsombor webfejlesztő – Hogyan dolgozom? Bemutatkozás és a fejlesztési folyamat lépései.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo">
-        <div class="logo-mark">KZ</div>
-        <span class="logo-name">Kerekes Zsombor</span>
-    </a>
-    <div class="nav-links">
-        <a href="index.html" class="nav-link">Kezdőlap</a>
-        <a href="services.html" class="nav-link">Szolgáltatások</a>
-        <a href="portfolio.html" class="nav-link">Portfólió</a>
-        <a href="about.html" class="nav-link">Rólam</a>
-        <a href="contact.html" class="nav-link">Kapcsolat</a>
+<!-- NAV -->
+<nav class="nav" id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo-mark">KZ</a>
+        <div class="nav-links">
+            <a href="index.html">Kezdőlap</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="portfolio.html">Portfólió</a>
+            <a href="about.html" class="active">Rólam</a>
+            <a href="contact.html">Kapcsolat</a>
+            <a href="contact.html" class="nav-cta">Ingyenes terv →</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
-    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
-        <span></span><span></span><span></span>
-    </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">Kezdőlap</a>
-    <a href="services.html" class="nav-link">Szolgáltatások</a>
-    <a href="portfolio.html" class="nav-link">Portfólió</a>
-    <a href="about.html" class="nav-link">Rólam</a>
-    <a href="contact.html" class="nav-link">Kapcsolat</a>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Kezdőlap</a>
+    <a href="services.html">Szolgáltatások</a>
+    <a href="portfolio.html">Portfólió</a>
+    <a href="about.html">Rólam</a>
+    <a href="contact.html">Kapcsolat</a>
+    <a href="contact.html" class="nav-cta">Ingyenes weboldal-terv →</a>
 </div>
 
-<div class="page-wrap">
-
-    <!-- HERO -->
-    <div class="process-hero reveal">
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-inner">
         <span class="section-tag">RÓLAM</span>
-        <h1 class="section-title" style="max-width:520px; margin: 0 auto 16px;">Bemutatkozás &amp; folyamat</h1>
-        <p class="section-desc" style="margin: 0 auto; max-width: 500px;">Ki vagyok és hogyan dolgozom? Átlátható folyamat, közvetlen kommunikáció.</p>
+        <h1>Bemutatkozás <span class="gold-word">&amp; folyamat</span></h1>
+        <p>Ki vagyok és hogyan dolgozom? Átlátható folyamat, közvetlen kommunikáció.</p>
     </div>
+</div>
 
-    <!-- ABOUT INTRO -->
-    <div class="about-intro">
-        <div class="about-visual reveal">
-            <div class="av-icon">👨‍💻</div>
-            <div class="av-name">Kerekes Zsombor</div>
-            <div class="av-role">Webfejlesztő – Online foglalási rendszerek specialistája</div>
-            <div class="av-badges">
-                <span class="av-badge">HTML / CSS / JS</span>
-                <span class="av-badge">Firebase</span>
-                <span class="av-badge">Foglalási rendszerek</span>
-                <span class="av-badge">Reszponzív design</span>
-                <span class="av-badge">Admin dashboardok</span>
+<!-- ABOUT INTRO -->
+<div class="about-hero-section reveal">
+    <div class="avatar-block">
+        <div class="avatar-ring">👨‍💻</div>
+        <div class="avatar-badge">Webfejlesztő 💻</div>
+    </div>
+    <div class="about-text">
+        <span class="section-tag">BEMUTATKOZÁS</span>
+        <h2>Webfejlesztő, aki valódi problémákat old meg.</h2>
+        <p>Nem sablonokat adok el – minden projektet az ügyfél igényeihez, iparágához és munkafolyamataihoz igazítom. Specialitásom az online foglalási rendszerek fejlesztése, ahol a hangsúly az egyszerűségen és a megbízhatóságon van.</p>
+        <p>A rendszereimben a tulajdonos könnyen kezeli a foglalásokat, az ügyfél pedig gond nélkül időpontot foglal – akár telefonról, éjjel-nappal.</p>
+        <div class="about-stats-row">
+            <div class="astat">
+                <span class="astat-num" data-count="10" data-suffix="+">10+</span>
+                <div class="astat-label">Befejezett projekt</div>
+            </div>
+            <div class="astat">
+                <span class="astat-num" data-count="4" data-suffix="">4</span>
+                <div class="astat-label">Iparág lefedve</div>
+            </div>
+            <div class="astat">
+                <span class="astat-num" data-count="48" data-suffix="h">48h</span>
+                <div class="astat-label">Visszahívás</div>
             </div>
         </div>
-        <div class="about-text reveal">
-            <h2>Webfejlesztő, aki valódi problémákat old meg.</h2>
-            <p>Nem sablonokat adok el – minden projektet az ügyfél igényeihez, iparágához és munkafolyamataihoz igazítom. Specialitásom az online foglalási rendszerek fejlesztése, ahol a hangsúly az egyszerűségen és a megbízhatóságon van.</p>
-            <p>A rendszereimben a tulajdonos könnyen kezeli a foglalásokat, az ügyfél pedig gond nélkül időpontot foglal – akár telefonról, éjjel-nappal.</p>
-            <div class="about-stats">
-                <div class="a-stat">
-                    <span class="a-stat-num" data-count="10" data-suffix="+">10+</span>
-                    <div class="a-stat-label">Befejezett projekt</div>
-                </div>
-                <div class="a-stat">
-                    <span class="a-stat-num" data-count="4" data-suffix="">4</span>
-                    <div class="a-stat-label">Iparág lefedve</div>
-                </div>
-                <div class="a-stat">
-                    <span class="a-stat-num" data-count="100" data-suffix="%">100%</span>
-                    <div class="a-stat-label">Elégedett ügyfél</div>
-                </div>
-                <div class="a-stat">
-                    <span class="a-stat-num" data-count="24" data-suffix="h">24h</span>
-                    <div class="a-stat-label">Válaszidő</div>
-                </div>
-            </div>
+        <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
+            <a href="contact.html" class="btn btn-primary">Kérem az ingyenes tervet →</a>
+            <a href="portfolio.html" class="btn btn-outline">Referenciák megtekintése</a>
         </div>
     </div>
+</div>
 
-    <!-- INDUSTRIES -->
-    <div class="industries-section">
-        <div class="section-header center reveal">
-            <span class="section-tag">IPARÁGAK</span>
-            <h2 class="section-title">Kinek fejlesztettem eddig?</h2>
-            <p class="section-desc">Minden szektornak más igénye van – én ezt figyelembe veszem.</p>
+<!-- INDUSTRIES -->
+<div class="industries-section">
+    <div class="industries-inner">
+        <div class="industries-text reveal">
+            <span class="section-tag" style="color: rgba(201,168,76,.7);">IPARÁGAK</span>
+            <h2>Kinek fejlesztettem eddig?</h2>
+            <p>Minden szektornak más igénye van – én ezt figyelembe veszem. A foglalási és adminisztrációs logika szektoronként teljesen eltér.</p>
+            <a href="portfolio.html" class="btn btn-white" style="margin-top: 24px;">Projektek megtekintése →</a>
         </div>
-        <div class="industries-grid">
-            <div class="ind-card reveal" id="ind-dental">
+        <div class="industries-list reveal">
+            <div class="industry-item" id="ind-dental">
                 <div class="ind-icon">🦷</div>
-                <div class="ind-name">Fogászat</div>
-                <div class="ind-desc">Orvos-választó, kezeléstípus, visszaigazolás</div>
+                <div>
+                    <div class="ind-name">Fogászat</div>
+                    <div class="ind-desc">Orvos-választó, kezeléstípus, visszaigazolás</div>
+                </div>
             </div>
-            <div class="ind-card reveal" id="ind-tire">
+            <div class="industry-item" id="ind-tire">
                 <div class="ind-icon">🔧</div>
-                <div class="ind-name">Gumiszerviz</div>
-                <div class="ind-desc">Kapacitáskezelő, gumimáret, napi állások</div>
+                <div>
+                    <div class="ind-name">Gumiszerviz</div>
+                    <div class="ind-desc">Kapacitáskezelő, gumimáret, napi állások</div>
+                </div>
             </div>
-            <div class="ind-card reveal" id="ind-dog">
+            <div class="industry-item" id="ind-dog">
                 <div class="ind-icon">🐾</div>
-                <div class="ind-name">Kutyakozmetika</div>
-                <div class="ind-desc">Állat adatai, méret alapú árazás, galéria</div>
+                <div>
+                    <div class="ind-name">Kutyakozmetika</div>
+                    <div class="ind-desc">Állat adatai, méret alapú árazás, galéria</div>
+                </div>
             </div>
-            <div class="ind-card reveal" id="ind-salon">
+            <div class="industry-item" id="ind-salon">
                 <div class="ind-icon">💄</div>
-                <div class="ind-name">Szépségszalon</div>
-                <div class="ind-desc">Staff naptár, fodrász-választó, jóváhagyás</div>
+                <div>
+                    <div class="ind-name">Szépségszalon</div>
+                    <div class="ind-desc">Staff naptár, fodrász-választó, jóváhagyás</div>
+                </div>
             </div>
-            <div class="ind-card reveal" id="ind-other">
+            <div class="industry-item" id="ind-other">
                 <div class="ind-icon">➕</div>
-                <div class="ind-name">Más iparág?</div>
-                <div class="ind-desc">Bármilyen területen tudok foglalási rendszert fejleszteni</div>
+                <div>
+                    <div class="ind-name">Más iparág?</div>
+                    <div class="ind-desc">Bármilyen területen tudok foglalási rendszert fejleszteni</div>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- PROCESS -->
-    <div class="process-hero" style="background: none; border: none; border-top: 1px solid #e8eaf0; text-align: center; padding: 60px 60px 20px;">
-        <span class="section-tag">FOLYAMAT</span>
-        <h2 class="section-title" style="max-width: 500px; margin: 0 auto 16px;">Hogyan dolgozunk együtt?</h2>
-        <p class="section-desc" style="margin: 0 auto;">4 egyszerű lépés a konzultációtól az éles weboldalig.</p>
-    </div>
-    <div class="process-section">
-        <div class="process-steps">
+<!-- PROCESS -->
+<div style="background: var(--bg); padding: 72px 32px 0; max-width: 1200px; margin: 0 auto; text-align: center;">
+    <span class="section-tag">FOLYAMAT</span>
+    <h2 class="section-title" style="max-width: 500px; margin: 0 auto 14px;">Hogyan dolgozunk együtt?</h2>
+    <p class="section-desc" style="margin: 0 auto;">4 egyszerű lépés a konzultációtól az éles weboldalig.</p>
+</div>
+<div class="process-section">
+    <div class="process-steps">
 
-            <div class="p-step reveal" id="step-1">
-                <div class="p-step-left">
-                    <div class="p-num">1</div>
-                    <div class="p-line"></div>
-                </div>
-                <div class="p-step-content">
-                    <h3>Személyre szabott stratégiai terv</h3>
-                    <p>Megbeszéljük az elképzeléseit, a vállalkozás működését és az igényelt funkciókat. Telefonon, videóhíváson vagy e-mailben – ahogy Önnek kényelmes. Kötelezettség nélkül.</p>
-                    <div class="p-detail">
-                        <ul>
-                            <li>Milyen iparágban tevékenykedik?</li>
-                            <li>Milyen funkciókat szeretne (foglalás, admin, stb.)?</li>
-                            <li>Van már meglévő oldala, amit megújítana?</li>
-                            <li>Mikor kellene elkészülnie?</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-step reveal" id="step-2">
-                <div class="p-step-left">
-                    <div class="p-num">2</div>
-                    <div class="p-line"></div>
-                </div>
-                <div class="p-step-content">
-                    <h3>Tervezés &amp; ajánlat</h3>
-                    <p>A megbeszéltek alapján összeállítom az ajánlatot, a funkciólistát és az időtervet. Amennyiben elfogadja, elkezdünk dolgozni.</p>
-                    <div class="p-detail">
-                        <ul>
-                            <li>Részletes funkció specifikáció</li>
-                            <li>Árverbek és határidők</li>
-                            <li>Design irányvonal megbeszélése</li>
-                            <li>Technikai megoldások ismertetése</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-step reveal" id="step-3">
-                <div class="p-step-left">
-                    <div class="p-num">3</div>
-                    <div class="p-line"></div>
-                </div>
-                <div class="p-step-content">
-                    <h3>Fejlesztés &amp; visszajelzés</h3>
-                    <p>Az oldalt és a foglalási rendszert folyamatos kommunikáció mellett fejlesztem. Rendszeres demók, közbülső visszajelzési körök. Ön mindig tudja, hol tartunk.</p>
-                    <div class="p-detail">
-                        <ul>
-                            <li>HTML / CSS / JavaScript fejlesztés</li>
-                            <li>Firebase backend és adatbázis beállítás</li>
-                            <li>Admin felület kialakítása</li>
-                            <li>Mobilbarát reszponzív optimalizálás</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-step reveal" id="step-4">
-                <div class="p-step-left">
-                    <div class="p-num">4</div>
-                </div>
-                <div class="p-step-content">
-                    <h3>Átadás &amp; folyamatos támogatás</h3>
-                    <p>Az oldal élesítése, betanítás az admin felület kezelésére. Az átadás után is elérhet – hibajavítás, módosítások, bővítések gyorsan megoldhatók.</p>
-                    <div class="p-detail">
-                        <ul>
-                            <li>Domain csatolás, hosting beállítás (igény esetén)</li>
-                            <li>Betanítás az admin dashboard kezelésére</li>
-                            <li>Dokumentáció átadása</li>
-                            <li>Utólagos támogatás, karbantartás</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        <div class="process-step reveal" id="step-1">
+            <div class="ps-num">1</div>
+            <div class="ps-icon">📞</div>
+            <h4>Konzultáció</h4>
+            <p>Megbeszéljük az elképzeléseit, a vállalkozás működését és az igényelt funkciókat. Kötelezettség nélkül.</p>
         </div>
 
-        <div style="text-align: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid #e8eaf0;">
-            <p style="color: #6b7280; margin-bottom: 24px; font-size: 16px;">Készen áll az első lépésre?</p>
-            <a href="contact.html" class="btn btn-primary btn-lg" id="about-cta">Kérem az ingyenes weboldal-tervet →</a>
+        <div class="process-step reveal" id="step-2">
+            <div class="ps-num">2</div>
+            <div class="ps-icon">📋</div>
+            <h4>Tervezés & ajánlat</h4>
+            <p>A megbeszéltek alapján összeállítom az ajánlatot, a funkciólistát és az időtervet.</p>
         </div>
+
+        <div class="process-step reveal" id="step-3">
+            <div class="ps-num">3</div>
+            <div class="ps-icon">💻</div>
+            <h4>Fejlesztés</h4>
+            <p>Folyamatos kommunikáció mellett fejlesztem az oldalt. Rendszeres demók, visszajelzési körök.</p>
+        </div>
+
+        <div class="process-step reveal" id="step-4">
+            <div class="ps-num">4</div>
+            <div class="ps-icon">🚀</div>
+            <h4>Átadás & támogatás</h4>
+            <p>Az oldal élesítése, betanítás az admin felület kezelésére. Az átadás után is elérhet engemet.</p>
+        </div>
+
     </div>
 
+    <div style="text-align: center; margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border);">
+        <p style="color: var(--mid); margin-bottom: 24px; font-size: 16px;">Készen áll az első lépésre?</p>
+        <a href="contact.html" class="btn btn-primary btn-lg" id="about-cta">Kérem az ingyenes weboldal-tervet →</a>
+    </div>
 </div>
 
 <!-- FOOTER -->

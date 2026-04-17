@@ -9,92 +9,99 @@
 </head>
 <body>
 
-<nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo">
-        <div class="logo-mark">KZ</div>
-        <span class="logo-name">Kerekes Zsombor</span>
-    </a>
-    <div class="nav-links">
-        <a href="index.html" class="nav-link">Kezdőlap</a>
-        <a href="services.html" class="nav-link">Szolgáltatások</a>
-        <a href="portfolio.html" class="nav-link">Portfólió</a>
-        <a href="about.html" class="nav-link">Rólam</a>
-        <a href="contact.html" class="nav-link">Kapcsolat</a>
+<!-- NAV -->
+<nav class="nav" id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo-mark">KZ</a>
+        <div class="nav-links">
+            <a href="index.html">Kezdőlap</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="portfolio.html">Portfólió</a>
+            <a href="about.html">Rólam</a>
+            <a href="contact.html" class="active">Kapcsolat</a>
+            <a href="contact.html" class="nav-cta">Ingyenes terv →</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <a href="contact.html" class="nav-cta">Kérem az ingyenes weboldal-tervet →</a>
-    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Menü">
-        <span></span><span></span><span></span>
-    </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">Kezdőlap</a>
-    <a href="services.html" class="nav-link">Szolgáltatások</a>
-    <a href="portfolio.html" class="nav-link">Portfólió</a>
-    <a href="about.html" class="nav-link">Rólam</a>
-    <a href="contact.html" class="nav-link">Kapcsolat</a>
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Kezdőlap</a>
+    <a href="services.html">Szolgáltatások</a>
+    <a href="portfolio.html">Portfólió</a>
+    <a href="about.html">Rólam</a>
+    <a href="contact.html">Kapcsolat</a>
+    <a href="contact.html" class="nav-cta">Ingyenes weboldal-terv →</a>
 </div>
 
-<div class="page-wrap">
-
-    <!-- HERO -->
-    <div class="contact-hero reveal">
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-inner">
         <span class="section-tag">KAPCSOLAT</span>
-        <h1 class="section-title" style="max-width:520px; margin: 0 auto 16px;">Kezdjük el együtt!</h1>
-        <p class="section-desc" style="margin: 0 auto; max-width: 500px;">Írjon, hívjon, vagy töltse ki az űrlapot – 24 órán belül válaszolok minden megkeresésre.</p>
+        <h1>Kezdjük el <span class="gold-word">együtt!</span></h1>
+        <p>Írjon, hívjon, vagy töltse ki az űrlapot – 24 órán belül válaszolok minden megkeresésre.</p>
     </div>
+</div>
 
-    <!-- CONTACT GRID -->
+<!-- CONTACT GRID -->
+<div class="page-wrap" style="padding-top: 48px;">
     <div class="contact-grid">
 
-        <!-- INFO -->
-        <div class="contact-info reveal">
-            <div class="ci-card">
-                <div class="ci-icon-wrap">📧</div>
+        <!-- INFO BOX -->
+        <div class="contact-info-box reveal">
+            <h3>Elérhetőségeim</h3>
+            <p>Közvetlen elérhetőségeim alább. Ha gyors választ szeretne, hívjon telefonon!</p>
+
+            <div class="contact-info-item">
+                <div class="ci-icon">📧</div>
                 <div>
                     <div class="ci-label">Email</div>
-                    <div class="ci-val"><a href="mailto:zsomborkerekes09@gmail.com">zsomborkerekes09@gmail.com</a></div>
+                    <div class="ci-value"><a href="mailto:zsomborkerekes09@gmail.com">zsomborkerekes09@gmail.com</a></div>
                 </div>
             </div>
-            <div class="ci-card">
-                <div class="ci-icon-wrap">📞</div>
+            <div class="contact-info-item">
+                <div class="ci-icon">📞</div>
                 <div>
                     <div class="ci-label">Telefon</div>
-                    <div class="ci-val"><a href="tel:+36703280900">06 70 328 0900</a></div>
+                    <div class="ci-value"><a href="tel:+36703280900" style="color: var(--gold);">06 70 328 0900</a></div>
                 </div>
             </div>
-            <div class="ci-card">
-                <div class="ci-icon-wrap">📍</div>
+            <div class="contact-info-item">
+                <div class="ci-icon">📍</div>
                 <div>
                     <div class="ci-label">Helyszín</div>
-                    <div class="ci-val">Magyarország</div>
+                    <div class="ci-value">Magyarország</div>
                 </div>
             </div>
-            <div class="ci-card">
-                <div class="ci-icon-wrap">⏱️</div>
+            <div class="contact-info-item">
+                <div class="ci-icon">⏱️</div>
                 <div>
                     <div class="ci-label">Válaszidő</div>
-                    <div class="ci-val">24 órán belül</div>
+                    <div class="ci-value">24 órán belül</div>
                 </div>
             </div>
-            <div class="ci-card">
-                <div class="ci-icon-wrap">💬</div>
+            <div class="contact-info-item">
+                <div class="ci-icon">💬</div>
                 <div>
                     <div class="ci-label">Konzultáció</div>
-                    <div class="ci-val">Ingyenes, kötelezettség nélkül</div>
+                    <div class="ci-value">Ingyenes, kötelezettség nélkül</div>
                 </div>
             </div>
         </div>
 
-        <!-- FORM -->
-        <div class="contact-form-wrap reveal">
+        <!-- FORM BOX -->
+        <div class="contact-form-box reveal">
             <h3>Küldjön üzenetet</h3>
+            <p>Töltse ki az alábbi űrlapot és az üzenete közvetlenül az e-mail fiókjomba érkezik.</p>
+
             <form id="contactForm" action="https://formsubmit.co/zsomborkerekes09@gmail.com" method="POST">
-                <!-- FormSubmit Configuration -->
+                <!-- FormSubmit config -->
                 <input type="hidden" name="_subject" value="Új üzenet a Kerekes Zsombor Portfólióról!">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
-                
-                <div class="form-grid">
+
+                <div class="form-row">
                     <div class="form-group">
                         <label for="fname">Neve *</label>
                         <input type="text" id="fname" name="fname" placeholder="Pl. Kovács Péter" required>
@@ -103,53 +110,54 @@
                         <label for="phone">Telefonszám</label>
                         <input type="tel" id="phone" name="phone" placeholder="06 30 ...">
                     </div>
-                    <div class="form-group full">
-                        <label for="email">Email cím *</label>
-                        <input type="email" id="email" name="email" placeholder="cime@email.hu" required>
-                    </div>
-                    <div class="form-group full">
-                        <label for="business">Vállalkozás típusa</label>
-                        <select id="business" name="business">
-                            <option value="">Válasszon egyet...</option>
-                            <option>Fogászat / Egészségügyi klinika</option>
-                            <option>Gumiszerviz / Autószerviz</option>
-                            <option>Kutyakozmetika / Kisállatszalon</option>
-                            <option>Szépségszalon / Fodrász</option>
-                            <option>Más vállalkozás</option>
-                        </select>
-                    </div>
-                    <div class="form-group full">
-                        <label for="budget">Hozzávetőleges keret</label>
-                        <select id="budget" name="budget">
-                            <option value="">Nem tudom / Nem áruló el</option>
-                            <option>50 000 – 100 000 Ft</option>
-                            <option>100 000 – 200 000 Ft</option>
-                            <option>200 000 Ft felett</option>
-                        </select>
-                    </div>
-                    <div class="form-group full">
-                        <label for="message">Üzenet / elképzelés *</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Meséljen a vállalkozásáról, az elképzeléséről, a kívánt funkciókról..." required></textarea>
-                    </div>
                 </div>
-                <button type="submit" class="form-submit" id="contactSubmit">Üzenet küldése →</button>
+                <div class="form-group">
+                    <label for="email">Email cím *</label>
+                    <input type="email" id="email" name="email" placeholder="cime@email.hu" required>
+                </div>
+                <div class="form-group">
+                    <label for="business">Vállalkozás típusa</label>
+                    <select id="business" name="business">
+                        <option value="">Válasszon egyet...</option>
+                        <option>Fogászat / Egészségügyi klinika</option>
+                        <option>Gumiszerviz / Autószerviz</option>
+                        <option>Kutyakozmetika / Kisállatszalon</option>
+                        <option>Szépségszalon / Fodrász</option>
+                        <option>Más vállalkozás</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Hozzávetőleges keret</label>
+                    <select id="budget" name="budget">
+                        <option value="">Nem tudom / Nem áruló el</option>
+                        <option>50 000 – 100 000 Ft</option>
+                        <option>100 000 – 200 000 Ft</option>
+                        <option>200 000 Ft felett</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Üzenet / elképzelés *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Meséljen a vállalkozásáról, az elképzeléséről, a kívánt funkciókról..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" id="contactSubmit" style="width: 100%; justify-content: center;">Üzenet küldése →</button>
                 <div class="form-success" id="formSuccess">
                     ✓ Köszönöm az üzenetet! Hamarosan – 24 órán belül – felveszem a kapcsolatot.
                 </div>
+                <div class="form-error" id="formError">
+                    ✕ Hiba történt. Kérem próbálja újra később, vagy hívjon telefonon.
+                </div>
             </form>
+
+            <div class="contact-phone-cta">
+                <div class="cpc-icon">📞</div>
+                <div class="cpc-text">
+                    <h4>Inkább telefonál?</h4>
+                    <p>Hívjon direktben: <a href="tel:+36703280900" style="color: var(--gold-dark); font-weight: 700;">06 70 328 0900</a></p>
+                </div>
+            </div>
         </div>
 
     </div>
-
-    <!-- BOTTOM CTA STRIP -->
-    <div class="contact-map reveal" style="margin: 0 auto 80px; max-width: 1000px; padding: 56px 60px;">
-        <div>
-            <h2>Inkább telefonál?</h2>
-            <p>Hívjon fel bármikor – szívesen megbeszéljük az elképzeléseit személyesen is.</p>
-        </div>
-        <a href="tel:+36703280900" class="btn btn-white btn-lg" id="contact-phone-btn">📞 06 70 328 0900</a>
-    </div>
-
 </div>
 
 <!-- FOOTER -->
@@ -178,6 +186,7 @@
             <h4>Elérhetőség</h4>
             <a href="mailto:zsomborkerekes09@gmail.com">zsomborkerekes09@gmail.com</a>
             <a href="tel:+36703280900">06 70 328 0900</a>
+            <a href="contact.html">Kapcsolatfelvétel →</a>
         </div>
     </div>
     <div class="footer-bottom">
