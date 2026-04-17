@@ -41,7 +41,7 @@
 /* ── RESET ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; width: 100%; overflow-x: hidden; }
 
 body {
   font-family: 'Outfit', sans-serif;
@@ -49,6 +49,7 @@ body {
   color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
   cursor: auto !important;
 }
 
@@ -386,7 +387,7 @@ h1, h2, h3, h4, h5 {
 .bc-btn:hover { background: var(--gold); color: var(--dark); }
 
 /* Hero floating chips */
-.hero-right { position: relative; }
+.hero-right { position: relative; min-width: 0; }
 .hero-chip {
   position: absolute;
   background: var(--surface);
@@ -1271,8 +1272,8 @@ h1, h2, h3, h4, h5 {
   .nav-inner { padding: 0 20px; }
   .page-wrap  { padding-left: 20px; padding-right: 20px; }
 
-  .hero { padding: calc(var(--nav-h) + 40px) 20px 60px; text-align: left; }
-  .hero-title { font-size: clamp(38px, 12vw, 48px); }
+  .hero { padding: calc(var(--nav-h) + 40px) 20px 60px; text-align: left; overflow: hidden; }
+  .hero-title { font-size: clamp(34px, 11vw, 42px); word-break: break-word; hyphens: auto; }
   .hero-subtitle { margin: 0 0 36px 0; text-align: left; }
 
   .hero-actions { justify-content: flex-start; }
