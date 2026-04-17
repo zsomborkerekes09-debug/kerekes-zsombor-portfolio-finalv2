@@ -3,7 +3,7 @@
    Design: Fekete-Szürke-Arany | Editorial Premium
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 /* ── DESIGN TOKENS ─────────────────────────────────────────── */
 :root {
@@ -44,7 +44,7 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
   background: var(--bg);
   color: var(--dark);
   line-height: 1.6;
@@ -58,7 +58,7 @@ ul { list-style: none; }
 
 /* ── TYPOGRAPHY ─────────────────────────────────────────────── */
 h1, h2, h3, h4, h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -785,7 +785,7 @@ h1, h2, h3, h4, h5 {
   padding: 12px 16px;
   border: 1.5px solid var(--border);
   border-radius: var(--r-sm);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 14px;
   color: var(--dark);
   background: var(--surface);
@@ -1271,17 +1271,20 @@ h1, h2, h3, h4, h5 {
   .nav-inner { padding: 0 20px; }
   .page-wrap  { padding-left: 20px; padding-right: 20px; }
 
-  .hero { padding: calc(var(--nav-h) + 24px) 20px 48px; }
-  .hero-title { font-size: clamp(36px, 11vw, 42px); }
+  .hero { padding: calc(var(--nav-h) + 40px) 20px 60px; text-align: left; }
+  .hero-title { font-size: clamp(38px, 12vw, 48px); }
+  .hero-subtitle { margin: 0 0 36px 0; text-align: left; }
 
-  .hero-actions .btn { width: 100%; justify-content: center; }
-  .hero-stats { flex-direction: column; gap: 24px; align-items: stretch; text-align: center; border-top: none; padding-top: 12px; }
-  .h-stat-num { font-size: 32px; }
-  .h-stat-label { font-size: 13px; }
+  .hero-actions { justify-content: flex-start; }
+  .hero-actions .btn { width: 100%; justify-content: center; margin-bottom: 24px; padding: 18px 24px; }
+  
+  .hero-stats { flex-direction: row; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-around; text-align: center; border-top: none; padding-top: 0; }
+  .h-stat-num { font-size: 28px; }
+  .h-stat-label { font-size: 11px; }
 
-  .quick-strip { grid-template-columns: 1fr; padding: 0; }
-  .qs-item { padding: 32px 20px; border-bottom: 1px solid rgba(255,255,255,.06); }
-  .qs-item:last-child { border-bottom: none; }
+  .quick-strip { grid-template-columns: 1fr 1fr; padding: 0; gap: 1px; }
+  .qs-item { padding: 24px 12px; border-bottom: 1px solid rgba(255,255,255,.06); }
+  .qs-item:nth-child(3), .qs-item:nth-child(4) { border-bottom: none; }
   .qs-item::after { display: none !important; }
 
   .teaser { padding: 48px 20px; }
