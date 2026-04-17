@@ -846,9 +846,9 @@ button, input, select, textarea { font-family: inherit; }
     .chip-1, .chip-2, .chip-3 { display: none; }
     .about-intro { grid-template-columns: 1fr; padding: 60px 28px 0; gap: 40px; }
     .portfolio-grid { grid-template-columns: 1fr; }
-    .contact-grid { grid-template-columns: 1fr; padding: 60px 28px; }
+    .contact-grid { grid-template-columns: 1fr; padding: 60px 28px; gap: 40px; }
     .footer-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
-    .teaser { grid-template-columns: 1fr; padding: 60px 28px; }
+    .teaser { grid-template-columns: 1fr; padding: 60px 28px; gap: 40px; }
     .home-portfolio { padding: 60px 28px; }
     .quick-strip { flex-direction: column; }
     .qs-item { border-right: none; border-bottom: 1px solid var(--border); }
@@ -856,13 +856,59 @@ button, input, select, textarea { font-family: inherit; }
     section, .services-hero, .portfolio-hero, .process-hero, .contact-hero,
     .services-grid, .process-section, .industries-section,
     .services-cta, .home-cta { padding-left: 28px; padding-right: 28px; }
+    .contact-map { flex-direction: column; padding: 40px 28px; text-align: center; margin: 0 28px 60px; }
 }
+
 @media (max-width: 640px) {
-    .footer-inner { grid-template-columns: 1fr; }
-    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
-    .form-grid { grid-template-columns: 1fr; }
-    .hero-stats { gap: 24px; }
-    .about-stats { grid-template-columns: 1fr; }
-    .hero-actions { flex-direction: column; }
+    html { font-size: 15px; } /* Finomabb alap betűméret kis kijelzőn */
+    
+    /* Typográfia finomítás telefonon */
+    .hero-title { font-size: clamp(34px, 10vw, 42px); line-height: 1.1; letter-spacing: -1px; }
+    .hero-sub { font-size: 16px; margin-bottom: 32px; }
+    .section-title { font-size: clamp(26px, 8vw, 32px); margin-bottom: 12px; }
+    .section-desc { font-size: 15px; }
+    
+    /* Felesleges margók/paddigok eltávolítása, több hely a tartalomnak */
+    .navbar { padding: 0 20px; }
+    .hero { padding: 40px 20px; }
+    section, .services-hero, .portfolio-hero, .process-hero, .contact-hero,
+    .services-grid, .process-section, .industries-section,
+    .services-cta, .home-cta, .teaser, .home-portfolio, .contact-grid { padding-left: 20px; padding-right: 20px; }
+    
+    /* Gombok és Hero cselekvésre ösztönző elemek */
+    .hero-actions { flex-direction: column; width: 100%; margin-bottom: 40px; }
     .hero-actions .btn { width: 100%; justify-content: center; }
+    
+    /* Statisztikák 2 oszlopban, hogy ne csússzanak szét */
+    .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .hero-stats div:last-child { grid-column: 1 / -1; } /* Harmadik elem végigér */
+    .h-stat-num { font-size: 28px; }
+    .about-stats { grid-template-columns: 1fr 1fr; gap: 16px; }
+    
+    /* CTÁk és térkép finomítások */
+    .services-cta { margin: 0 20px 60px; padding: 40px 20px; border-radius: 16px; }
+    .services-cta h2 { font-size: 24px; }
+    .contact-map { margin: 0 20px 60px; padding: 32px 20px; border-radius: 16px; gap: 20px; }
+    .contact-map h2 { font-size: 24px; }
+    .quick-strip { margin: 0 20px 60px; border-radius: 16px; }
+    .qs-item { padding: 24px 20px; }
+    
+    /* Folyamat lépéseinek optimalizálása mobilra */
+    .p-step { flex-direction: column; gap: 16px; padding: 32px 0; align-items: stretch; }
+    .p-step-left { flex-direction: row; align-items: center; gap: 16px; }
+    .p-line { display: none; } /* Nem kell függőleges vonal mobilra */
+    .p-num { width: 44px; height: 44px; font-size: 16px; }
+    .p-step-content { padding-top: 0; }
+    .p-step-content h3 { font-size: 20px; }
+    
+    /* Űrlapok és kártyák */
+    .booking-card { border-radius: 16px; }
+    .bc-header { padding: 20px 20px 16px; }
+    .bc-body { padding: 20px; }
+    .form-grid { grid-template-columns: 1fr; }
+    
+    /* Lábjegyzet */
+    .footer { padding: 40px 20px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; margin-top: 32px; }
 }
