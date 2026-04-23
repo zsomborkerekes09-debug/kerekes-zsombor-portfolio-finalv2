@@ -638,10 +638,16 @@ h1, h2, h3, h4, h5 {
   aspect-ratio: 16/10;
   overflow: hidden;
   background: var(--bg);
-  border-bottom: 1px solid var(--border-light);
+  /* Removed border-bottom to avoid visual conflict with image edges */
 }
-.hp-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(0.2, 0.8, 0.2, 1); }
-.hp-card:hover .hp-img img { transform: scale(1.05); }
+.hp-img img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform .6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: scale(1.05); /* Scales up slightly to hide the blue window-border baked into the screenshots */
+}
+.hp-card:hover .hp-img img { transform: scale(1.1); }
 .hp-info { padding: 32px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .hp-sector {
   align-self: flex-start;
